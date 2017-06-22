@@ -1,0 +1,36 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+<section class="section-cta color-gray visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Actividades Complementarias</h1>
+        <div class="col-lg-12">
+            <p class="color-text-gray">Esta terapia está encaminada a modificar el comportamiento del paciente para que reduzca o elimine el consumo de drogas o adicciones en general, para que éste adquiera habilidades de afrontamiento que le permitan evitar recaídas.</p>
+            <p class="color-text-gray">Para lograr estos objetivos se utilizan técnicas esenciales para modificar el comportamiento del paciente, es decir, que aumenta el conocimiento de sus creencias, emociones y conductas, a modo que logre un crecimiento positivo de su persona, mejore la comunicación y convivencia con los miembros de su familia, sociedad y pares.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %} 

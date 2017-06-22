@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+<section class="section-cta color-gray visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Consejería Terapéutica en Adiciones Individual</h1>
+        <div class="row col-lg-12">
+            <ol class="color-text-gray">
+                <li>Establecer una relación de ayuda con la persona en tratamiento, caracterizada por la cordialidad, respeto, claridad y empatía.</li>
+                <li>Facilitar el compromiso del usuario con el tratamiento y el proceso de recuperación, motivando sus cambios, así como, el que continúe con el programa.</li>
+                <li>Obtener que la persona en tratamiento establezca metas realistas y alcanzables a fin de que pueda lograr y mantener su recuperación.</li>
+                <li>Intervenir y promover el conocimiento, las destrezas y actitudes de la persona en tratamiento, que contribuyen a un cambio positivo en los comportamientos relacionados con el consumo de sustancias.</li>
+                <li>Trabajar adecuadamente con la persona en tratamiento, a efecto de que continúe su progreso en las metas establecidas, alejándose de los obstáculos con que se pueda encontrar.</li>
+                <li>Reconocer cómo, cuándo y por qué involucrar a las personas significativas para enriquecer o apoyar el plan de tratamiento.</li>
+                <li>Facilitar el desarrollo de las destrezas básicas de habilidades para la vida asociadas a la recuperación.</li>
+                <li>Dar respuestas constructivas cuando el comportamiento de las personas en tratamiento no ha logrado las metas de recuperación establecidas.</li>
+                <li>Aplicar destrezas para el manejo de crisis, estudiando y practicando los métodos más adecuados para cada adicción.</li>
+                <li>Facilitar que la persona en tratamiento conozca los signos de la adicción y domine las destrezas y las actitudes necesarias para mantener el progreso del tratamiento y prevenir la recaída.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %} 

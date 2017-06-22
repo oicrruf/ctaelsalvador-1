@@ -1,0 +1,39 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+<section class="section-cta color-gray visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Grupos Institucionales</h1>
+        <div class="col-lg-12">
+            <p class="color-text-gray">Espacios que el Centro Terapéutico ha facilitado para que personas puedan reunirse y compartir sus distintas experiencias (Autoayuda), contamos puntualmente con dos:</p>
+            <ol class="color-text-gray">
+                <li>Autoayuda para usuarios o pacientes. (lunes, miércoles y viernes de 6:00 – 8:00 pm)</li>
+                <li>Autoayuda para madres y esposas. (solo mujeres) (martes de 6:00 – 8:00 pm)</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %} 

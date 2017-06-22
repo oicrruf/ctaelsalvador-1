@@ -1,0 +1,35 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+<section class="section-cta color-gray visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Consulta y Evaluación Psiquiátrica</h1>
+        <div class="col-lg-12">
+            <p class="color-text-gray">Inmediatamente después de la aceptación de asistencia por parte del paciente y su familia, se refiere al paciente con un médico especialista para que le realice una evaluación integral, con el propósito de conocer las condiciones que presenta (si las hubiere), para que de esta manera, el médico pueda contar con la información necesaria para realizar un diagnóstico, contando nosotros con esta información, podamos elaborar un plan de tratamiento personalizado.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %} 

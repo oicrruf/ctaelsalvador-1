@@ -1,0 +1,39 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+<section class="section-cta color-gray visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Talleres Formativos Educativos</h1>
+        <div class="col-lg-12">
+            <p class="color-text-gray">Grupos guiados por especialistas, con la finalidad de poder desarrollar temas de interés que resulten de formación y educación dentro de los distintos procesos de cambio. Contamos puntualmente con dos:</p>
+            <ol class="color-text-gray">
+                <li>Taller Psicoeducativo. (martes de 5:00 – 6:00 pm)</li>
+                <li>Taller de Prevención de Recaída. (jueves de 5:00 – 6:00 pm)</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %} 

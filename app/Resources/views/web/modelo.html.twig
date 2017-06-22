@@ -1,0 +1,165 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block contenido %}
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+{# Header #}
+<header>
+    <div class="visible-lg">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
+    </div>
+    <div class="visible-xs">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
+    </div>
+    <div class="visible-sm visible-md">
+        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
+    </div>
+</header>
+{# /Header #}
+{# Módelo | PC #}
+<section id="intro1" class="section-cta visible-lg">
+    <div class="container">
+        <h1 class="padding-bottom-1 col-lg-12">Módelo Ambulatorio</h1>
+        <div class="col-lg-12">
+            <p class="color-text-gray">En el Centro Terapéutico de Adicciones desarrollamos programas 100% ambulatorios, es decir que NO hay ningún tipo de internamiento. Nuestros programas se desarrollan de manera paralela y simultánea (paciente-familia), donde se brindan las herramientas necesarias para retomar y lograr obtener una vida equilibrada, racional y consciente, superando a través de estas sus distintas problemáticas. En nuestra institución buscamos integrar en un mismo lugar y tiempo, la asistencia profesional y técnica requerida, con comunicación abierta entre los distintos profesionales, tanto internos como externos, teniendo así todos un mismo objetivo y criterio</p>
+        </div>
+    </div>
+</section>
+{# /Módelo | PC #}
+{# Módelo | Móvil #}
+<section class="section-cta visible-xs visible-sm visible-md">
+    <div class="container">
+        <div>
+            <h1 class="padding-bottom-1">Módelo Ambulatorio</h1>
+            <div class="col-lg-12">
+                <p class="row color-text-gray">En el Centro Terapéutico de Adicciones desarrollamos programas 100% ambulatorios, es decir que NO hay ningún tipo de internamiento. Nuestros programas se desarrollan de manera paralela y simultánea (paciente-familia), donde se brindan las herramientas necesarias para retomar y lograr obtener una vida equilibrada, racional y consciente, superando a través de estas sus distintas problemáticas. En nuestra institución buscamos integrar en un mismo lugar y tiempo, la asistencia profesional y técnica requerida, con comunicación abierta entre los distintos profesionales, tanto internos como externos, teniendo así todos un mismo objetivo y criterio</p>
+            </div>
+        </div>  
+    </div>
+</section>     
+{# /Módelo | Móvil #}
+
+<section id="blog-standard" class="section blog blog-card-fullwidth mild-bg color-gray">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Terapia Familiar
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('terapia_familiar') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Terapia Psicológica
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('terapia_psicologica') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Consulta y Evaluación Psiquiatríca
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('evaluacion_psicologica') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Consejería Terapeutica en Adicciones
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('consejeria_terapeutica') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Grupos Familiares
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('grupos_familiares') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Grupos Institucionales
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('grupos_institucionales') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Talleres Formativos Educativos
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('talleres_formativos') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="blog-post ">
+                    <img class="img-responsive center-block" src="{{ asset('resources/ctaelsalvador/assets/images/services/cta-el-salvador-convivios-playa-1.jpg') }}" alt="Latest News 1">
+                    <div class="blog-content">
+                        <h3>
+                            Actividades Complementarias
+                        </h3>
+                        <div class="post-meta">
+                            <span class="blog-catagory"><a href="{{ path('actividades_complementarias') }}">Ver más >></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+    </div>
+</section>
+{% block footer %}
+{{ include('web/footer.html.twig') }}
+{% endblock %}
+{% endblock %}    
