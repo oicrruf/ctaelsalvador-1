@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Imprima');
+
+::-moz-selection {
+    background: #b0cc3b;
+    color: #ffffff;
+}
+
+::selection {
+    background: #b0cc3b;
+    color: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #666666;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #666666;
+    }
+}
+
+.p-container{
+    padding-top: 56px;
+}
+
+h1{
+    font-family: 'Imprima', sans-serif;
+    font-size: 2em;
+    color: #000;
+}
+
+h2{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1.8em;
+    color: #000;
+}
+
+h3{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+}
+
+h4{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1.3em;
+    color: #000;
+}
+
+h5{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+h6{
+    font-family: 'Imprima', sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+
+.banner{
+    height: 22rem;
+    background-image: url("../images/cta-header-lg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

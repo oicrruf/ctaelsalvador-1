@@ -9,61 +9,19 @@
 <meta name="keywords" content="El Salvador, Centro Terapeutico de Adicciones, Eduado Loyola, vkings.net">
 <title>{% block title %}CTA El Salvador |{% endblock %}</title>
 {% block stylesheets %}
-<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('resources/california/assets/images/favicons/apple-icon-57x57.png') }}">
-<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('resources/california/assets/images/favicons/apple-icon-60x60.png') }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('resources/california/assets/images/favicons/apple-icon-72x72.png') }}">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('resources/california/assets/images/favicons/apple-icon-76x76.png') }}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('resources/california/assets/images/favicons/apple-icon-114x114.png') }}">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('resources/california/assets/images/favicons/apple-icon-120x120.png') }}">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('resources/california/assets/images/favicons/apple-icon-144x144.png') }}">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('resources/california/assets/images/favicons/apple-icon-152x152.png') }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('resources/california/assets/images/favicons/apple-icon-180x180.png') }}">
-<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('resources/california/assets/images/favicons/android-icon-192x192.png') }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('resources/california/assets/images/favicons/favicon-32x32.png') }}">
-<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('resources/california/assets/images/favicons/favicon-96x96.png') }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('resources/california/assets/images/favicons/favicon-16x16.png') }}">
-<link rel="manifest" href="{{ asset('resources/california/assets/images/favicons/manifest.js') }}on') }}">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="{{ asset('resources/california/assets/images/favicons/ms-icon-144x144.png') }}">
-<meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/bootstrap/dist/css/bootstrap.min.css') }}">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700'>
-<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" > 
-<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" > 
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/animsition/dist/css/animsition.min.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/fontawesome/css/font-awesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/ionicons/css/ionicons.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/magnific-popup/dist/magnific-popup.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/lib/flexslider/flexslider.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('resources/california/assets/lib/owlcarousel/owl-carousel/owl.carousel.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('resources/california/assets/lib/owlcarousel/owl-carousel/owl.theme.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('resources/california/assets/lib/owlcarousel/owl-carousel/owl.transitions.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/css/main.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/california/assets/css/colors/limegreen.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/colors/cta-colors.css') }}">
-<script src="{{ asset('resources/ctaelsalvador/assets/js/script.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/main.css') }}">
 </head>
 {% endblock %}
-<body data-spy="scroll" data-target="#main-nav-collapse" data-offset="100">
-{% block contenido %}
+<body>
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
 {% endblock %}
-{% block javascripts %}
-<script src="{{ asset('resources/california/assets/lib/components-modernizr/modernizr.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/jquery/dist/jquery.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/bootstrap/dist/js/bootstrap.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/animsition/dist/js/animsition.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/magnific-popup/dist/jquery.magnific-popup.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/flexslider/jquery.flexslider.js') }}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQHivJBydHpLBhzVpyAcydzOEOTifThPA&callback=initMap" type="text/javascript"></script>
-<script src="{{ asset('resources/california/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/waypoints/lib/jquery.waypoints.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/waypoints/lib/shortcuts/inview.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/isotope/dist/isotope.pkgd.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/owlcarousel/owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/countdown/dest/jquery.countdown.min.js') }}"></script>
-<script src="{{ asset('resources/california/assets/lib/vide/dist/jquery.vide.js') }}"></script>
-<script src="{{ asset('resources/california/assets/js/plugins.js') }}"></script>
-<script src="{{ asset('resources/california/assets/js/main.js') }}"></script>
-{% endblock %}
+<div class="p-container">
+{% block contenido %}{% endblock %}
+</div>
+</body>
+{% block javascripts %}{% endblock %}

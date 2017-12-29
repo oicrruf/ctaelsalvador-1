@@ -1,189 +1,92 @@
 {% extends 'layout.html.twig' %}
 {% block title %}CTA El Salvador | Inicio{% endblock %}
 {% block contenido %}
-{% block navbar %}
-{{ include('web/navbar.html.twig') }}
-{% endblock %}
-{# Header #}
-<header>
-    <div class="visible-lg">
-        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-lg.jpg') }}">
-    </div>
-    <div class="visible-xs">
-        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-sm.jpg') }}">
-    </div>
-    <div class="visible-sm visible-md">
-        <img class="img-responsive" src="{{ asset('resources/ctaelsalvador/assets/images/header/cta-header-md.jpg') }}">
-    </div>
-</header>
-{# /Header #}
 {# ¿Por qué CTA El Salvador | PC #}
-<section class="section-cta visible-lg">
+
+<div class="row banner">
+    
+</div>
+    
+<div class="visible-lg">
     <div class="container">
-        <h1 class="padding-bottom-1 col-lg-12">¿Quiénes somos?</h1>
-        <div class="col-lg-7">
-            <p class="color-text-gray">Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
-            <p class="color-text-gray"> El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
-        </div>
-        <div class="col-lg-5">
-            <figure>
-                <img class="img-responsive img-thumbnail" src="{{ asset('resources/ctaelsalvador/assets/images/model/cta-no-image-talleres.jpg') }}">
-            </figure>
+        <div class="row">
+            <h1 class="col-lg-12">¿Quiénes somos?</h1>
+            <div class="col-lg-12">
+                <p>Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
+                <p> El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
+            </div>
         </div>
     </div>
-</section>
+</div>
 {# /¿Por qué CTA El Salvador | PC #}
 {# ¿Por qué CTA El Salvador | Móvil #}
-<div class="row">
-    <figure>
-        <img class="img-responsive visible-xs visible-sm visible-md" src="{{ asset('resources/ctaelsalvador/assets/images/model/cta-no-image-talleres.jpg') }}">
-    </figure>
-</div>
-<section class="section-cta visible-xs visible-sm visible-md">
-    <div class="container">
+
+<div>
         <div>
             <h1 class="padding-bottom-1">¿Por qué CTA El Salvador?</h1>
         </div>  
         <div>
-            <p class="color-text-gray">Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
-            <p class="color-text-gray">El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
+            <p>Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
+            <p>El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
         </div>
-    </div>
-</section>     
-{# /¿Por qué CTA El Salvador | Móvil #}
-{#
-<section class="section-cta color-gray visible-lg">
-    <div class="container">
-        <h1 class="col-lg-12 padding-bottom-1">Historia</h1>
-        <div class="col-lg-12">
-            <p class="color-text-gray">El Centro Terapéutico de Adicciones fue inaugurado en mayo de 2012 y nace como un proyecto de su director Eduardo Loyola Arguello, quien buscó dar un homenaje a <em>Don Jaime A. Hill</em>, fundador y primer presidente de la Fundación Antidrogas de El Salvador <strong>(FUNDASALVA)</strong>. La iniciativa se creó para brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares.</p>
-        </div>
-    </div>
-</section>   
-#}
-{#
-<section class="section-cta color-gray visible-xs visible-sm visible-md">
-    <div class="container">
-        <h1 class="padding-bottom-1">Historia</h1>
-            <p class="color-text-gray">El Centro Terapéutico de Adicciones fue inaugurado en mayo de 2012 y nace como un proyecto de su director Eduardo Loyola Arguello, quien buscó dar un homenaje a <em>Don Jaime A. Hill</em>, fundador y primer presidente de la Fundación Antidrogas de El Salvador <strong>(FUNDASALVA)</strong>. La iniciativa se creó para brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares.</p>
-    </div>
-</section>   
-#}
+</div>     
 {# Misión y Visión | PC #}
-<section class="section-cta color-gray visible-lg">
-    <div class="container">
-        <div class="col-lg-6">
-            <h1 class="padding-bottom-1">Misión</h1>
-            <p class="color-text-gray">Acompañar a las personas afectadas por la adicción, codependencia y afines para que sean personas integrales y encuentren su sentido de vida.</p>
+<div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Misión</h1>
+                <p>Acompañar a las personas afectadas por la adicción, codependencia y afines para que sean personas integrales y encuentren su sentido de vida.</p>
+            </div>
+            <div class="col-lg-6">
+                <h1>Visión</h1>
+                <p>Ser reconocidos a nivel nacional e internacional como comunidad terapéutica, con la calidad humana y profesional de brindar una respuesta cálida y afectuosa a nuestros usuarios.</p>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <h1 class="padding-bottom-1">Visión</h1>
-            <p class="color-text-gray">Ser reconocidos a nivel nacional e internacional como comunidad terapéutica, con la calidad humana y profesional de brindar una respuesta cálida y afectuosa a nuestros usuarios.</p>
-        </div>
-    </div>
-</section>   
+</div>   
 {# /Misión y Visión | PC #}
-{# Misión y Visión | Móvil #}
-<section class="section-cta color-gray visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="row col-xs-12 col-sm-12 col-md-6">
-            <h1 class="padding-bottom-1">Misión</h1>
-            <p class="color-text-gray padding-bottom-1">Acompañar a las personas afectadas por la adicción, codependencia y afines para que sean personas integrales y encuentren su sentido de vida.</p>
-        </div>
-        <div class="row col-xs-12 col-sm-12 col-md-6">
-            <h1 class="padding-bottom-1">Visión</h1>
-            <p class="color-text-gray">Ser reconocidos a nivel nacional e internacional como comunidad terapéutica, con la calidad humana y profesional de brindar una respuesta cálida y afectuosa a nuestros usuarios.</p>
-        </div>
-    </div>
-</section>   
-{# /Misión y Visión | Móvil #}
 {# Valores Institucionales | PC #}
-<section class="section-cta visible-lg">
-    <div class="container">
+<div>
+        <div class="row">
         <div class="col-lg-12">
             <h1 class="padding-bottom-1">Valores Institucionales</h1>
         </div>
         <div class="col-lg-3">
             <h3 class="padding-bottom-2">Opción por la Vida</h3>
-            <p class="color-text-gray">Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.</p>
+            <p>Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.</p>
         </div>
         <div class="col-lg-3">
             <h3 class="padding-bottom-2">Amor</h3>
-            <p class="color-text-gray">Lo buscamos, lo encontramos y luchamos por construirlo cada día.</p>
+            <p>Lo buscamos, lo encontramos y luchamos por construirlo cada día.</p>
         </div>
         <div class="col-lg-3">
             <h3 class="padding-bottom-2">Confidencialidad</h3>
-            <p class="color-text-gray">Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.</p>
+            <p>Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.</p>
         </div>
         <div class="col-lg-3">
             <h3 class="padding-bottom-2">Respeto</h3>
-            <p class="color-text-gray">Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.</p>
+            <p>Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.</p>
         </div>
-    </div>
-</section>
+                    </div>
+</div>
 {# /Valores Institucionales | PC #}
-{# Valores Institucionales | Móvil #}
-<section class="section-cta visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="row col-lg-12">
-            <h1 class="padding-bottom-1">Valores Institucionales</h1>
-        </div>
-        <div class="row col-lg-3">
-            <h3 class="padding-bottom-2">Opción por la Vida</h3>
-            <p class="color-text-gray">Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.</p>
-        </div>
-        <div class="row col-lg-3">
-            <h3 class="padding-bottom-2">Amor</h3>
-            <p class="color-text-gray">Lo buscamos, lo encontramos y luchamos por construirlo cada día.</p>
-        </div>
-        <div class="row col-lg-3">
-            <h3 class="padding-bottom-2">Confidencialidad</h3>
-            <p class="color-text-gray">Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.</p>
-        </div>
-        <div class="row col-lg-3">
-            <h3 class="padding-bottom-2">Respeto</h3>
-            <p class="color-text-gray">Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.</p>
-        </div>
-    </div>
-</section>
-{# /Valores Institucionales | Móvil #}
 {# ¿Por qué nosotros? | PC #}
-<section class="section-cta color-gray visible-lg">
-    <div class="container">
+<div>
+        <div class="row">
         <div class="col-lg-12">
-            <h1 class="padding-bottom-1">¿Por qué nosotros?</h1>
-            <ul class="list-unstyled list-arrows-right color-text-gray">
-                <li>Institución acreditada y reconocida por Organismos Nacionales e Internacionales.</li>
-                <li>Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.</li>
-                <li>Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.</li>
-                <li>Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.</li>
-                <li>Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.</li>
-                <li>Porque nuestros usuarios y pacientes hablan por nosotros.</li>
+            <h1>¿Por qué nosotros?</h1>
+            
+                Institución acreditada y reconocida por Organismos Nacionales e Internacionales.
+                Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.
+                Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.
+                Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.
+                Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.
+                Porque nuestros usuarios y pacientes hablan por nosotros.
                 
-            </ul>
+            
         </div>
-    </div>
-</section>
+            </div>
+</div>
 {# /¿Por qué nosotros? | PC #}
-{# ¿Por qué nosotros? | Móvil #}
-<section class="section-cta color-gray visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="row col-lg-12">
-            <h1 class="padding-bottom-1">¿Por qué nosotros?</h1>
-            <ul class="list-unstyled list-arrows-right color-text-gray">
-                <li>Institución acreditada y reconocida por Organismos Nacionales e Internacionales.</li>
-                <li>Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.</li>
-                <li>Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.</li>
-                <li>Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.</li>
-                <li>Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.</li>
-                <li>Porque nuestros usuarios y pacientes hablan por nosotros.</li>
-                
-            </ul>
-        </div>
-    </div>
-</section>
-{# /¿Por qué nosotros? | Móvil #}
-
 {% block footer %}
 {{ include('web/footer.html.twig') }}
 {% endblock %}
