@@ -1,13 +1,18 @@
 {% extends 'layout.html.twig' %}
 {% block title %}CTA El Salvador | Inicio{% endblock %}
 {% block contenido %}
-{# ¿Por qué CTA El Salvador | PC #}
-
-<div class="row banner">
-    
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 title-banner">
+                <p>¿Necesitas ayuda?</p>
+                <p>En CTA El Salvador podemos hacerlo</p>
+            </div>
+        </div>
+    </div>
 </div>
-    
-<div class="visible-lg">
+
+<section>
     <div class="container">
         <div class="row">
             <h1 class="col-lg-12">¿Quiénes somos?</h1>
@@ -17,21 +22,20 @@
             </div>
         </div>
     </div>
-</div>
-{# /¿Por qué CTA El Salvador | PC #}
-{# ¿Por qué CTA El Salvador | Móvil #}
-
-<div>
+</section>
+<section>
+    <div class="container">
         <div>
-            <h1 class="padding-bottom-1">¿Por qué CTA El Salvador?</h1>
+            <h1>¿Por qué CTA El Salvador?</h1>
         </div>  
         <div>
             <p>Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
             <p>El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
         </div>
-</div>     
-{# Misión y Visión | PC #}
-<div>
+    </div>
+</section>     
+<section>
+    <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <h1>Misión</h1>
@@ -42,35 +46,41 @@
                 <p>Ser reconocidos a nivel nacional e internacional como comunidad terapéutica, con la calidad humana y profesional de brindar una respuesta cálida y afectuosa a nuestros usuarios.</p>
             </div>
         </div>
-</div>   
+    </div>
+</section>   
 {# /Misión y Visión | PC #}
 {# Valores Institucionales | PC #}
-<div>
+<section>
+    <div class="container">
         <div class="row">
-        <div class="col-lg-12">
-            <h1 class="padding-bottom-1">Valores Institucionales</h1>
+            <div class="col-lg-12">
+                <h1>Valores Institucionales</h1>
+            </div>
+            <div class="col-lg-3 block-valores">
+                <div class="icon-valores"><i class="fa fa-life-ring" aria-hidden="true"></i></div>
+                <h3>Opción por la Vida</h3>
+                <p>Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.</p>
+            </div>
+            <div class="col-lg-3 block-valores">
+                <div class="icon-valores"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                <h3>Amor</h3>
+                <p>Lo buscamos, lo encontramos y luchamos por construirlo cada día.</p>
+            </div>
+            <div class="col-lg-3 block-valores">
+                <div class="icon-valores"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+                <h3>Confidencialidad</h3>
+                <p>Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.</p>
+            </div>
+            <div class="col-lg-3 block-valores">
+                <div class="icon-valores"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
+                <h3>Respeto</h3>
+                <p>Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.</p>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <h3 class="padding-bottom-2">Opción por la Vida</h3>
-            <p>Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.</p>
-        </div>
-        <div class="col-lg-3">
-            <h3 class="padding-bottom-2">Amor</h3>
-            <p>Lo buscamos, lo encontramos y luchamos por construirlo cada día.</p>
-        </div>
-        <div class="col-lg-3">
-            <h3 class="padding-bottom-2">Confidencialidad</h3>
-            <p>Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.</p>
-        </div>
-        <div class="col-lg-3">
-            <h3 class="padding-bottom-2">Respeto</h3>
-            <p>Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.</p>
-        </div>
-                    </div>
-</div>
-{# /Valores Institucionales | PC #}
-{# ¿Por qué nosotros? | PC #}
-<div>
+    </div>
+</section>
+<section>
+    <div class="container">
         <div class="row">
         <div class="col-lg-12">
             <h1>¿Por qué nosotros?</h1>
@@ -85,9 +95,6 @@
             
         </div>
             </div>
-</div>
-{# /¿Por qué nosotros? | PC #}
-{% block footer %}
-{{ include('web/footer.html.twig') }}
-{% endblock %}
+        </div>
+</section>
 {% endblock %}    

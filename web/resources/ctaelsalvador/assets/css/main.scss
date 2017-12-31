@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500');
 @import url('https://fonts.googleapis.com/css?family=Imprima');
 
+@import "_navbar";
+
 ::-moz-selection {
-    background: #b0cc3b;
+    background: #1e97cc;
     color: #ffffff;
 }
 
 ::selection {
-    background: #b0cc3b;
+    background: #1e97cc;
     color: #ffffff;
 }
 
@@ -15,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #666666;
+  font-weight: 300;
 }
 
 @media (max-width: 1024px) {
@@ -25,50 +28,134 @@ body {
     }
 }
 
-.p-container{
-    padding-top: 56px;
-}
-
 h1{
     font-family: 'Imprima', sans-serif;
     font-size: 2em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 h2{
     font-family: 'Imprima', sans-serif;
     font-size: 1.8em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 h3{
     font-family: 'Imprima', sans-serif;
     font-size: 1.5em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 h4{
     font-family: 'Imprima', sans-serif;
     font-size: 1.3em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 h5{
     font-family: 'Imprima', sans-serif;
     font-size: 1em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 h6{
     font-family: 'Imprima', sans-serif;
     font-size: 0.8em;
     color: #000;
+    padding-bottom: 5px;
 }
 
 .banner{
-    height: 22rem;
+    height: 24rem;
     background-image: url("../images/cta-header-lg.jpg");
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.title-banner{
+    font-family: 'Imprima', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;    
+    text-align: center;
+}
+
+section{
+    border-top: 1px #f7f7f7 solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.block-valores:hover{
+    color: #0A3344;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.block-valores h3{
+    text-align: center;
+    color: #666;
+}
+
+footer{
+    background-color: #0a3344;
+    color: #fff;
+}
+
+#copyright{
+    font-size: 0.8rem;
+    background-color: #125b7b;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.logo-footer{
+    height: 96px;
+    float: left;
+}
+
+.card-box{
+    padding-bottom: 25px;
+}
+
+.card-model{
+    border: 1px #f7f7f7 solid;
+    border-radius: 5px;
+}
+
+.card-model .card-content{
+    padding-top: 15px;
+    background-color: #fff;
+}
+
+.card-model-title{
+    /* background-image: url("../images/model/terapia-familiar-cta.jpg"); 
+    background-repeat: no-repeat; 
+    float: right;
+    background-position: right; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 70px;
+    border-bottom: 1px #f7f7f7 solid;
+}
+
+.card-model h3{
+    color: #fff;
+    position:relative;
+    text-align: left;
+    line-height: 70px;
+    
+}
+
+.icon-valores{
+    text-align: center;
+    font-size: 4rem;
+}
+
+

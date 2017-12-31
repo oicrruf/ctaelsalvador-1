@@ -1,88 +1,32 @@
-<!-- Footer widgets -->
-<section id="footer-widgets" class="section footer-widgets dark-bg">
-        <div class="row">
-            {#
-            <div class="col-md-2 col-sm-4 hidden-xs">
-                <div class="footer-title">
-                    <div class="text-uppercase">
-                        <h4><img class="img-responsive footer-logo" src="{{ asset('resources/ctaelsalvador/assets/images/ctaelsalvador-logo.png') }}" alt="California"></h4>
+<footer>
+    <section id="footer-widgets" class="section footer-widgets dark-bg">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-2">    
+                        <img class="logo-footer img-fluid" src="{{ asset('resources/ctaelsalvador/assets/images/ctaelsalvador-logo.png') }}" alt="ctaelsalvador-logo">
+                    </div>
+                    <div class="col-lg-10">
+                        <div>
+                            Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.
+                        </div>
+                        <ul class="list-inline social-icon">
+                            <li><a href="https://www.facebook.com/CTAELSALVADOR/" target="_blank"><span class="ion-social-facebook"></span></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            #}
-            
-            <div class="col-md-12 col-sm-12">
-                <div class="content-wrap widget-text">
-                    <p>Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
-                </div>
-                <ul class="list-inline social-icon">
-                    <li><a href="https://www.facebook.com/CTAELSALVADOR/" target="_blank"><span class="ion-social-facebook"></span></a></li>
-                </ul>
-            </div>
-            {#
-            <div class="col-md-2 col-sm-4">
-                <div class="content-wrap widget-contact">
-                    <ul class="list-unstyled list-arrows-right">
-                        <li>
-                            <a href="#faq.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#about_us.html">About Us</a>
-                        </li>
-                        <li>
-                            <a href="">We're Hiring</a>
-                        </li>
-                        <li>
-                            <a href="">Investors</a>
-                        </li>
-                        <li>
-                            <a href="">Export</a>
-                        </li>
-                        <li>
-                            <a href="">Events</a>
-                        </li>
-                        <li>
-                            <a href="">Legal</a>
-                        </li>
-                        <li>
-                            <a href="">Technext</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="content-wrap widget-gallery">
-                    <div class="lightbox-gallery">
-                        <a target="_blank" href="{{ asset('resources/california/assets/images/gallery/big/big_1.jpg') }}">
-                            <img class="img-responsive" src="{{ asset('resources/california/assets/images/gallery/thumbnail/full_8/1.jpg') }}" alt=""/>
-                        </a>
-                        <a target="_blank" href="{{ asset('resources/california/assets/images/gallery/big/big_3.jpg') }}">
-                            <img class="img-responsive" src="{{ asset('resources/california/assets/images/gallery/thumbnail/full_8/3.jpg') }}" alt=""/>
-                        </a>
-                        <a target="_blank" href="{{ asset('resources/california/assets/images/gallery/big/big_8.jpg') }}">
-                            <img class="img-responsive" src="{{ asset('resources/california/assets/images/gallery/thumbnail/full_8/8.jpg') }}" alt=""/>
-                        </a>
-                        <a target="_blank" href="{{ asset('resources/california/assets/images/gallery/big/big_9.jpg') }}">
-                            <img class="img-responsive" src="{{ asset('resources/california/assets/images/gallery/thumbnail/full_8/9.jpg') }}" alt=""/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            #}
-    </div>
-</section> <!-- /.Footer widgets -->
-<footer id="footer" class="section footer">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <p class="copyright">&copy; 2017 CTA El Salvador</p>
-            </div>
-            {#
-            <div class="col-md-6 col-sm-6">
-                <p class="footer-menu">
-                    <a href="">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a>
-                </p>
-            </div>
-            #}
         </div>
-</footer> <!-- /.footer -->
+    </section>
+</footer> 
+<div class="col-lg-12" id="copyright">
+    <div class="container">
+        &copy; {{ "now"|date("Y") }} CTA El Salvador
+    </div>
+</div>
+{#
+<div class="col-md-6 col-sm-6">
+<p class="footer-menu">
+<a href="">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a>
+</p>
+</div>
+#}

@@ -1,6 +1,7 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #0A3344;">
+    <div class="container">
     <a href="{{ path('homepage') }}" class="menuzord-brand">
-        <img style="height: 40px;" src="{{ asset('resources/ctaelsalvador/assets/images/ctaelsalvador-logo.png') }}" alt="ctaelsalvador-logo">
+        <img class="logo-nav"src="{{ asset('resources/ctaelsalvador/assets/images/ctaelsalvador-logo.png') }}" alt="ctaelsalvador-logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,4 +12,5 @@
             <a class="nav-link" href="{{ path('model') }}">Modelo</a>
         </div>
     </div>
+        </div>
 </nav>
