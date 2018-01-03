@@ -4,11 +4,13 @@
 }
 
 .nav-link{
-    color: #fff !important;
+    font-weight: 500;
+    color: #b6c2c7 !important;
     text-align: left;
 }
 
 .nav-link:hover{
     font-weight: 500;
+    color: #fff !important;
     transition: ease 0.5s  all;
 }

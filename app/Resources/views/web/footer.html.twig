@@ -2,27 +2,29 @@
     <section id="footer-widgets" class="section footer-widgets dark-bg">
         <div class="container">
             <div class="row">
-                    <div class="col-lg-2">    
-                        <img class="logo-footer img-fluid" src="{{ asset('resources/ctaelsalvador/assets/images/ctaelsalvador-logo.png') }}" alt="ctaelsalvador-logo">
-                    </div>
-                    <div class="col-lg-10">
-                        <div>
+                    <div class="col-lg-9">    
+                        <img class="logo-footer img-fluid" src="{{ asset('images/ctaelsalvador-logo.png') }}" alt="ctaelsalvador-logo">
+                        <div class="footer-text">
                             Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.
                         </div>
-                        <ul class="list-inline social-icon">
-                            <li><a href="https://www.facebook.com/CTAELSALVADOR/" target="_blank"><span class="ion-social-facebook"></span></a></li>
-                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-contact">   
+                        <span class="footer-contact-title">Contáctanos:</span>
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i><a class="footer-ml-icon" href="https://www.facebook.com/CTAELSALVADOR/"> /ctaelsalvador</a><br/>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i><span class="footer-ml-icon">Tel.: 2263 1478</span><br/>
+                        <i class="fa fa-envelope-square" aria-hidden="true"></i><span class="footer-ml-icon">contact@ctaelsalvador.com</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</footer> 
-<div class="col-lg-12" id="copyright">
-    <div class="container">
-        &copy; {{ "now"|date("Y") }} CTA El Salvador
+    <div class="col-lg-12" id="copyright">
+        <div class="container">
+            &copy; {{ "now"|date("Y") }} CTA El Salvador
+        </div>
     </div>
-</div>
+</footer> 
+
 {#
 <div class="col-md-6 col-sm-6">
 <p class="footer-menu">

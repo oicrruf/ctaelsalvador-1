@@ -1,0 +1,149 @@
+@import "_variables";
+
+::-moz-selection {
+    background: #1e97cc;
+    color: #ffffff;
+}
+
+::selection {
+    background: #1e97cc;
+    color: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #666666;
+    }
+}
+
+h1{
+    font-family: $font-title;
+    font-size: 2em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h2{
+    font-family: $font-title;
+    font-size: 1.8em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-family: $font-title;
+    font-size: 1.5em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h4{
+    font-family: $font-title;
+    font-size: 1.3em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h5{
+    font-family: $font-title;
+    font-size: 1em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h6{
+    font-family: $font-title;
+    font-size: 0.8em;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.banner{
+    height: 18rem;
+    background-image: url("../../../../images/cta-header-lg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-banner{
+    font-family: $font-title;
+    font-size: 2.5rem;
+    color: #fff;    
+    text-align: center;
+}
+
+section{
+    border-top: $border-section;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card-box{
+    padding-bottom: 25px;
+}
+
+.card-model{
+    border: $border-default;
+    border-radius: 5px;
+}
+
+.card-model .card-content{
+    padding-top: 15px;
+    background-color: #fff;
+}
+
+.card-model-title{
+    /* background-image: url("../images/model/terapia-familiar-cta.jpg"); 
+    background-repeat: no-repeat; 
+    float: right;
+    background-position: right; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 70px;
+    border-bottom: $border-default;
+}
+
+.card-model h3{
+    color: #fff;
+    position:relative;
+    text-align: left;
+    line-height: 70px;
+}
+
+.icon-valores{
+    display: inline-block;
+    font-size: 1.2rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.section-header{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.block-valores:hover{
+    color: #0A3344;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+
+
+.block-valores{
+    text-align: left;
+}
+
+.block-valores-content{
+    display: inline-block;
+}
