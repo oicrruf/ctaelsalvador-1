@@ -1,14 +1,10 @@
 {% extends 'layout.html.twig' %}
-{% block title %}CTA El Salvador | Inicio{% endblock %}
+{% block title %}CTA El Salvador | Módelo{% endblock %}
 {% block contenido %}
-<div class="min-banner-top">
-    <div class="container">
-    ¡Llámanos y déjanos ayudarte! 
-    <i class="fa fa-phone-square" aria-hidden="true"></i>
-    Tel.: 2263 1478
-    </div>
-</div>
-<div class="banner-background">
+{% block banner %}
+{{ include('banner.html.twig') }}
+{% block bcontent %}
+<div class="banner-modelo">
     <div class="container">
         <h1>Módelo Ambulatorio</h1>
         <div>
@@ -16,9 +12,11 @@
         </div>
     </div>
 </div>
-{% block navbar %}
-{{ include('web/navbar.html.twig') }}
 {% endblock %}
+{% endblock %}
+{% block navbar %}
+{{ include('navbar.html.twig') }}
+{% endblock %}    
 <section>
     <div class="container">
         <div class="row">

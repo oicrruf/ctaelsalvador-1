@@ -5,6 +5,8 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Entity\Client;
+use Symfony\Component\HttpFoundation\Response;
 
 class WebController extends Controller
 {
@@ -13,7 +15,14 @@ class WebController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('web/index.html.twig');
+        $logoCliente = $this->getDoctrine()
+                ->getRepository('AppBundle:Client')
+                ->findAll();
+        
+        return $this->render('web/index.html.twig', array(
+            'logoClient'         => $logoCliente,
+            
+        ));
     }
     
     /**
@@ -38,5 +47,21 @@ class WebController extends Controller
     public function mapAction()
     {
         return $this->render('web/como-llegar.html.twig');
+    }
+    
+    /**
+     * @Route("/galeria", name="galeria")
+     */
+    public function galeriaAction()
+    {
+        return $this->render('web/galeria.html.twig');
+    }
+    
+    /**
+     * @Route("/testimonios", name="testimonios")
+     */
+    public function testimoniosAction()
+    {
+        return $this->render('web/testimonios.html.twig');
     }
 }

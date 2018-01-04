@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | Galería{% endblock %}
+{% block contenido %}
+{% block banner %}
+{{ include('banner.html.twig') }}
+{% block bcontent %}
+<div class="banner-index">
+    <div class="container">
+        <div class="row">
+            <img class="banner-it img-fluid" src="{{ ('images/banner/index/hand-top.png') }}" />
+        </div>
+        <div class="row">
+            <img class="banner-ib img-fluid" src="{{ ('images/banner/index/hands-bottom.png') }}" />
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% endblock %}
+{% block navbar %}
+{{ include('navbar.html.twig') }}
+{% endblock %}
+{% endblock %}

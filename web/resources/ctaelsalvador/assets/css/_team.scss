@@ -1,7 +1,40 @@
 .banner-team{
-    height: 18rem;
-    background-image: url("../../../../images/team/team-sample.jpg");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: #fff;
+    padding-top: 3.4rem;
+    background-color: #323232;
+}
+
+.banner-t{
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    display: absolute;
+}
+
+.card-title{
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.card-subtitle{
+    color: #6f6f6f;
+    margin-bottom: 10px;
+}
+
+.card-icon{
+    float: left;
+    color: #000;
+}
+
+.card-icon-text{
+    color: #000;
+    display: block;
+    margin-left: 25px;
+}
+
+.card-text{
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 5px;
 }

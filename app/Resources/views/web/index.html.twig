@@ -1,14 +1,10 @@
 {% extends 'layout.html.twig' %}
 {% block title %}CTA El Salvador | Inicio{% endblock %}
 {% block contenido %}
-<div class="min-banner-top">
-    <div class="container">
-    ¡Llámanos y déjanos ayudarte!
-    <i class="fa fa-phone-square" aria-hidden="true"></i>
-    Tel.: 2263 1478
-    </div>
-</div>
-<div class="banner-background">
+{% block banner %}
+{{ include('banner.html.twig') }}
+{% block bcontent %}
+<div class="banner-index">
     <div class="container">
         <div class="row">
             <img class="banner-it img-fluid" src="{{ ('images/banner/index/hand-top.png') }}" />
@@ -18,8 +14,10 @@
         </div>
     </div>
 </div>
+{% endblock %}
+{% endblock %}
 {% block navbar %}
-{{ include('web/navbar.html.twig') }}
+{{ include('navbar.html.twig') }}
 {% endblock %}
 <section>
     <div class="container">
@@ -39,17 +37,6 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div>
-            <h1>¿Por qué CTA El Salvador?</h1>
-        </div>  
-        <div>
-            <p>Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.</p>
-            <p>El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.</p>
-        </div>
-    </div>
-</section>     
 <section>
     <div class="container">
         <div class="row">
@@ -98,19 +85,33 @@
 <section>
     <div class="container">
         <div class="row">
-        <div class="col-lg-12">
-            <h1>¿Por qué nosotros?</h1>
-            
-                Institución acreditada y reconocida por Organismos Nacionales e Internacionales.
-                Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.
-                Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.
-                Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.
-                Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.
-                Porque nuestros usuarios y pacientes hablan por nosotros.
-                
-            
-        </div>
+            <div class="col-lg-12">
+                <h1>¿Por qué nosotros?</h1>
+                    Institución acreditada y reconocida por Organismos Nacionales e Internacionales.
+                    Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.
+                    Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.
+                    Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.
+                    Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.
+                    Porque nuestros usuarios y pacientes hablan por nosotros.
             </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>¿Quiénes han confiado en nosotros?</h1>
+                <div class="row">
+                    {% for logo in logoClient %}
+                        <div class="col-lg-2">
+                            <img class="img-fluid" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                            <h5>{{ logo.name }}</h5>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
         </div>
 </section>
 {% endblock %}    
