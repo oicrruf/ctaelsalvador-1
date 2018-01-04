@@ -1,15 +1,24 @@
 {% extends 'layout.html.twig' %}
 {% block title %}CTA El Salvador | Inicio{% endblock %}
 {% block contenido %}
-{# Módelo | PC #}
-<section class="section-header">
+<div class="min-banner-top">
     <div class="container">
-        <h1 class="padding-bottom-1 col-lg-12">Módelo Ambulatorio</h1>
-        <div class="col-lg-12">
+    ¡Llámanos y déjanos ayudarte! 
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+    Tel.: 2263 1478
+    </div>
+</div>
+<div class="banner-background">
+    <div class="container">
+        <h1>Módelo Ambulatorio</h1>
+        <div>
             En el Centro Terapéutico de Adicciones desarrollamos programas 100% ambulatorios, es decir que NO hay ningún tipo de internamiento. Nuestros programas se desarrollan de manera paralela y simultánea (paciente-familia), donde se brindan las herramientas necesarias para retomar y lograr obtener una vida equilibrada, racional y consciente, superando a través de estas sus distintas problemáticas. En nuestra institución buscamos integrar en un mismo lugar y tiempo, la asistencia profesional y técnica requerida, con comunicación abierta entre los distintos profesionales, tanto internos como externos, teniendo así todos un mismo objetivo y criterio.
         </div>
     </div>
-</section>
+</div>
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
 <section>
     <div class="container">
         <div class="row">

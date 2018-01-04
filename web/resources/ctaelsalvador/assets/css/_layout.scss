@@ -67,12 +67,32 @@ h6{
     padding-bottom: 5px;
 }
 
-.banner{
+.banner-background{
     height: 18rem;
-    background-image: url("../../../../images/cta-header-lg.jpg");
+    background-color: #323232;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+    display: absolute;
+    z-index: -10;
+}
+
+.banner-ib{
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: absolute;
+    z-index: 20;
+}
+
+.banner-it{
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    display: absolute;
+    z-index: 30;
 }
 
 .title-banner{
@@ -146,4 +166,13 @@ section{
 
 .block-valores-content{
     display: inline-block;
+}
+
+.min-banner-top{
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    background-color: #0A3344;
+    line-height: 1.8rem;
 }

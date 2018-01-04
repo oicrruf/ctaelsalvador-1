@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %}
+{% block title %}CTA El Salvador | ¿Cómo llegar?{% endblock %}
+{% block contenido %}
+<div class="min-banner-top">
+    <div class="container">
+    ¡Llámanos y déjanos ayudarte! 
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+    Tel.: 2263 1478
+    </div>
+</div>
+<div class="banner-background">
+    <div class="container">
+        <h1>¿Cómo llegar?</h1>
+    </div>
+</div>
+{% block navbar %}
+{{ include('web/navbar.html.twig') }}
+{% endblock %}
+<style>
+    #map {
+     height: 400px;
+     width: 100%;
+    }
+</style>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 13.706249, lng: -89.250806 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp-NrBJYnLwA1ZheSxxL3EyOgaPxRrBWw&callback=initMap">
+    </script>
+    {% endblock %}  

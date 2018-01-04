@@ -31,4 +31,12 @@ class WebController extends Controller
     {
         return $this->render('web/equipo.html.twig');
     }
+    
+    /**
+     * @Route("/como-llegar", name="como_llegar")
+     */
+    public function mapAction()
+    {
+        return $this->render('web/como-llegar.html.twig');
+    }
 }
