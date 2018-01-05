@@ -4,5 +4,9 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
+    <field name="type" type="string" column="type" length="100" nullable="false"/>
+    <field name="nameActivity" type="string" column="name_activity" length="100" nullable="false"/>
+    <field name="urlImage" type="string" column="url_image" length="255" nullable="false"/>
+    <field name="altImage" type="string" column="alt_image" length="255" nullable="false"/>
   </entity>
 </doctrine-mapping>

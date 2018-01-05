@@ -5,10 +5,8 @@
 {{ include('banner.html.twig') }}
 {% block bcontent %}
 <div class="banner-gallery">
-    <div class="container">
-        <div class="row">
-            <img class="banner-t img-fluid" style="width: 500px; height: auto" src="{{ ('images/banner/galeria/galeria.png') }}" />
-        </div>
+    <div class="container text-center">
+        <img class="banner-t img-fluid" style="width: 500px; height: auto" src="{{ ('images/banner/galeria/galeria.png') }}" />
     </div>
 </div>
 {% endblock %}
@@ -16,4 +14,14 @@
 {% block navbar %}
 {{ include('navbar.html.twig') }}
 {% endblock %}
+<div class="container">
+<section>
+{% for fotografias in fotografia %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <img class="img-fluid" src="{{ asset('images/gallery/'~fotografias.urlImage) }}" alt="{{ fotografias.altImage }}"/>
+        <div class="logo-title">{{ fotografias.nameActivity }}</div>
+    </div>
+</section>
+</div>
+{% endfor %}
 {% endblock %}

@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Client;
 use AppBundle\Entity\Testimonial;
+use AppBundle\Entity\Gallery;
 use Symfony\Component\HttpFoundation\Response;
 
 class WebController extends Controller
@@ -70,7 +71,14 @@ class WebController extends Controller
      */
     public function galeriaAction()
     {
-        return $this->render('web/galeria.html.twig');
+        $fotografia = $this->getDoctrine()
+                ->getRepository('AppBundle:Gallery')
+                ->findAll();
+        
+        return $this->render('web/galeria.html.twig', array(
+            'fotografia'         => $fotografia,
+            
+        ));
     }
     
     

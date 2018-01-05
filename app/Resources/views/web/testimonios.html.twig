@@ -5,10 +5,8 @@
 {{ include('banner.html.twig') }}
 {% block bcontent %}
 <div class="banner-testimonio">
-    <div class="container">
-        <div class="row">
-            <img class="banner-t img-fluid" style="width: 500px; height: auto" src="{{ ('images/banner/testimonio/testimonio.png') }}" />
-        </div>
+    <div class="container text-center">
+        <img class="banner-t img-fluid" style="width: 500px; height: auto" src="{{ ('images/banner/testimonio/testimonio.png') }}" />
     </div>
 </div>
 {% endblock %}
@@ -16,19 +14,24 @@
 {% block navbar %}
 {{ include('navbar.html.twig') }}
 {% endblock %}
-<section>
-    <div class="container">
-        <div class="row">
+{% for testimonios in testimonio %}
+    <section>
+        <div class="container">
+            <div class="row">
             <div class="col-lg-12">
-                {% for testimonios in testimonio %}
-                    <strong>Tipo de Testimonio: </strong> {{testimonios.type}}
-                    <strong>Nombre: </strong>{{testimonios.name}}
-                    <br/>
+                <div class="testimonial-title">
+                    <h3>Nombre: </h3>
+                    <span>{{testimonios.name}}</span>
+                </div>
+                <div class="testimonial-title">
+                    <h3>Tipo de Testimonio: </h3>
+                    <span>{{testimonios.type}}</span>
+                </div>
+                <div class="testimonial-content">
                     {{testimonios.testimonial|raw}}
-                {% endfor %}
-        </div>
-    </div>
-</section>    
-    
-    
+                </div>
+            </div>
+                </div>
+    </section> 
+{% endfor %}
 {% endblock %}
