@@ -4,9 +4,11 @@
 {% block banner %}
 {{ include('banner.html.twig') }}
 {% block bcontent %}
-<div class="banner-ubicacion">
+<div class="banner-llegar">
     <div class="container">
-        ¿Cómo llegar?
+        <div class="row">
+            <img class="banner-t img-fluid" style="width: 500px; height: auto" src="{{ ('images/banner/como-llegar/como-llegar.png') }}" />
+        </div>
     </div>
 </div>
 {% endblock %}

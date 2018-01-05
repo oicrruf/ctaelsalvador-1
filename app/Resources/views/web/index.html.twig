@@ -87,13 +87,17 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>¿Por qué nosotros?</h1>
-                    Institución acreditada y reconocida por Organismos Nacionales e Internacionales.
-                    Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.
-                    Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.
-                    Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.
-                    Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.
-                    Porque nuestros usuarios y pacientes hablan por nosotros.
             </div>
+            <div class="row">
+                <ol>
+                    <li>Institución acreditada y reconocida por Organismos Nacionales e Internacionales.</li>
+                    <li>Somos supervisados por el Consejo Superior de Salud Pública de El Salvador.</li>
+                    <li>Todo nuestro personal técnico y profesional se encuentra debidamente certificado y acreditado para el abordaje de las distintas problemáticas en nuestro nivel de atención.</li>
+                    <li>Instalaciones adecuadas para el desarrollo de todos nuestros programas y herramientas terapéuticas.</li>
+                    <li>Acumulamos más de 30 años de experiencia en el área terapéutica del abordaje a dependencias y problemas psicosociales.</li>
+                    <li>Porque nuestros usuarios y pacientes hablan por nosotros.</li>
+                </ol>
+            </div>    
         </div>
     </div>
 </section>
@@ -103,10 +107,10 @@
             <div class="col-lg-12">
                 <h1>¿Quiénes han confiado en nosotros?</h1>
                 <div class="row">
-                    {% for logo in logoClient %}
-                        <div class="col-lg-2">
-                            <img class="img-fluid" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
-                            <h5>{{ logo.name }}</h5>
+                    {% for logo in logoInstitution if logo.type=='Cliente' %}
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                            <div class="logo-title">{{ logo.name }}</div>
                         </div>
                     {% endfor %}
                 </div>
@@ -114,4 +118,38 @@
         </div>
         </div>
 </section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Formaciones y Certificaciones</h1>
+                <div class="row">
+                    {% for logo in logoInstitution if logo.type=='Certificacion' %}
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                            <div class="logo-title">{{ logo.name }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        </div>
+</section> 
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Reconocimientos</h1>
+                <div class="row">
+                    {% for logo in logoInstitution if logo.type=='Reconocimiento' %}
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                            <div class="logo-title">{{ logo.name }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        </div>
+</section>   
 {% endblock %}    

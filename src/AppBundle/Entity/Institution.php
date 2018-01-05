@@ -5,9 +5,9 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Client
+ * Institution
  */
-class Client
+class Institution
 {
     /**
      * @var string
@@ -20,6 +20,16 @@ class Client
     private $urlImage;
 
     /**
+     * @var string
+     */
+    private $altImage;
+
+    /**
+     * @var string
+     */
+    private $type;
+
+    /**
      * @var integer
      */
     private $id;
@@ -29,7 +39,7 @@ class Client
      * Set name
      *
      * @param string $name
-     * @return Client
+     * @return Institution
      */
     public function setName($name)
     {
@@ -52,7 +62,7 @@ class Client
      * Set urlImage
      *
      * @param string $urlImage
-     * @return Client
+     * @return Institution
      */
     public function setUrlImage($urlImage)
     {
@@ -72,25 +82,10 @@ class Client
     }
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-    /**
-     * @var string
-     */
-    private $altImage;
-
-
-    /**
      * Set altImage
      *
      * @param string $altImage
-     * @return Client
+     * @return Institution
      */
     public function setAltImage($altImage)
     {
@@ -107,5 +102,38 @@ class Client
     public function getAltImage()
     {
         return $this->altImage;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return Institution
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return string 
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }

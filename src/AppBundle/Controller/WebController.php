@@ -6,6 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Client;
+use AppBundle\Entity\Testimonial;
 use Symfony\Component\HttpFoundation\Response;
 
 class WebController extends Controller
@@ -15,12 +16,27 @@ class WebController extends Controller
      */
     public function indexAction()
     {
-        $logoCliente = $this->getDoctrine()
-                ->getRepository('AppBundle:Client')
+        $logoInstitution = $this->getDoctrine()
+                ->getRepository('AppBundle:Institution')
                 ->findAll();
         
         return $this->render('web/index.html.twig', array(
-            'logoClient'         => $logoCliente,
+            'logoInstitution'         => $logoInstitution,
+            
+        ));
+    }
+    
+    /**
+     * @Route("/testimonios", name="testimonios")
+     */
+    public function testimoniosAction()
+    {
+        $testimonio = $this->getDoctrine()
+                ->getRepository('AppBundle:Testimonial')
+                ->findAll();
+        
+        return $this->render('web/testimonios.html.twig', array(
+            'testimonio'         => $testimonio,
             
         ));
     }
@@ -57,11 +73,5 @@ class WebController extends Controller
         return $this->render('web/galeria.html.twig');
     }
     
-    /**
-     * @Route("/testimonios", name="testimonios")
-     */
-    public function testimoniosAction()
-    {
-        return $this->render('web/testimonios.html.twig');
-    }
+    
 }

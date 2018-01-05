@@ -58,34 +58,6 @@ h6 {
   color: #000;
   padding-bottom: 5px; }
 
-.banner-index {
-  background-color: #323232; }
-
-.banner-ib {
-  height: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4rem;
-  display: absolute;
-  z-index: 20; }
-
-.banner-it {
-  height: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0rem;
-  display: absolute;
-  z-index: 30; }
-
-.banner-modelo {
-  color: #fff;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: #323232; }
-
-.banner-modelo h1 {
-  color: #fff; }
-
 section {
   border-top: 1px #f7f7f7 solid;
   padding-top: 25px;
@@ -128,11 +100,6 @@ section {
   padding-top: 70px;
   padding-bottom: 70px; }
 
-.block-valores:hover {
-  color: #0A3344;
-  background-color: #f7f7f7;
-  border-radius: 5px; }
-
 .block-valores {
   text-align: left; }
 
@@ -155,6 +122,9 @@ section {
     text-align: right;
     background-color: #0A3344;
     line-height: 1.8rem; } }
+.logo-title {
+  margin: 5px 0px 10px 0px; }
+
 .logo-nav {
   height: 40px; }
 
@@ -178,7 +148,7 @@ footer {
   background-color: #125b7b;
   color: #fff;
   padding-top: 15px;
-  padding-bottom: 10px; }
+  padding-bottom: 35px; }
 
 .logo-footer {
   height: 6.5rem;
@@ -206,18 +176,6 @@ footer {
   font-size: 1.2em;
   line-height: 2rem; }
 
-.banner-team {
-  color: #fff;
-  padding-top: 3.4rem;
-  background-color: #323232; }
-
-.banner-t {
-  height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0rem;
-  display: absolute; }
-
 .card-title {
   padding-bottom: 0;
   margin-bottom: 5px; }
@@ -239,5 +197,59 @@ footer {
   display: block;
   margin-left: 25px;
   margin-bottom: 5px; }
+
+.banner-index {
+  background-color: #323232; }
+
+.banner-it {
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+  display: absolute;
+  z-index: 30; }
+
+.banner-ib {
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  display: absolute;
+  z-index: 20; }
+
+.banner-team {
+  color: #fff;
+  padding-top: 3.4rem;
+  background-color: #323232; }
+
+.banner-gallery {
+  color: #fff;
+  padding-top: 3.4rem;
+  background-color: #323232; }
+
+.banner-t {
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+  display: absolute; }
+
+.banner-modelo {
+  color: #fff;
+  padding-top: 6rem;
+  background-color: #323232;
+  padding-bottom: 0; }
+
+.banner-testimonio {
+  color: #fff;
+  padding-top: 6rem;
+  background-color: #323232;
+  padding-bottom: 0; }
+
+.banner-llegar {
+  color: #fff;
+  padding-top: 6rem;
+  background-color: #323232;
+  padding-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -67,39 +67,6 @@ h6{
     padding-bottom: 5px;
 }
 
-.banner-index{
-    background-color: #323232;
-}
-
-.banner-ib{
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-    display: absolute;
-    z-index: 20;
-}
-
-.banner-it{
-    height: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
-    display: absolute;
-    z-index: 30;
-}
-
-.banner-modelo{
-    color: #fff;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #323232;
-}
-
-.banner-modelo h1{
-    color: #fff;
-}
-
 section{
     border-top: $border-section;
     padding-top: 25px;
@@ -150,14 +117,6 @@ section{
     padding-bottom: 70px;
 }
 
-.block-valores:hover{
-    color: #0A3344;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-}
-
-
-
 .block-valores{
     text-align: left;
 }
@@ -186,3 +145,6 @@ section{
     }
 }
 
+.logo-title{
+    margin: 5px 0px 10px 0px;
+}
