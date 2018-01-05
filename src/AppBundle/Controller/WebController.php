@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Client;
 use AppBundle\Entity\Testimonial;
 use AppBundle\Entity\Gallery;
+use AppBundle\Entity\Employed;
 use Symfony\Component\HttpFoundation\Response;
 
 class WebController extends Controller
@@ -55,7 +56,14 @@ class WebController extends Controller
      */
     public function equipoAction()
     {
-        return $this->render('web/equipo.html.twig');
+        $empleado = $this->getDoctrine()
+                ->getRepository('AppBundle:Employed')
+                ->findAll();
+        
+        return $this->render('web/equipo.html.twig', array(
+            'empleado'         => $empleado,
+            
+        ));
     }
     
     /**

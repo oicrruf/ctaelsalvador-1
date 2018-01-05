@@ -1,8 +1,55 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
 @import url("https://fonts.googleapis.com/css?family=Imprima");
-/* 'Imprima', sans-serif; */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
 @import url("https://fonts.googleapis.com/css?family=Imprima");
+.banner {
+  background-color: #323232;
+  height: 290px;
+  position: relative; }
+
+.banner-it {
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+  display: absolute; }
+
+.banner-ib {
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  display: absolute; }
+
+.banner.modelo {
+  padding-top: 165px; }
+
+.banner.team {
+  padding-top: 64px; }
+
+.banner.testimonio {
+  padding-top: 70px; }
+
+.banner.gallery {
+  padding-top: 60px; }
+
+.banner.llegar {
+  padding-top: 50px; }
+
+.logo-nav {
+  height: 40px; }
+
+.nav-link {
+  font-weight: 500;
+  color: #b6c2c7 !important;
+  text-align: left; }
+
+.nav-link:hover {
+  font-weight: 500;
+  color: #fff !important;
+  transition: ease 0.5s  all; }
+
+/* 'Imprima', sans-serif; */
 ::-moz-selection {
   background: #1e97cc;
   color: #ffffff; }
@@ -138,20 +185,6 @@ section {
   font-family: "Imprima", sans-serif;
   display: inline; }
 
-.logo-nav {
-  height: 40px; }
-
-.nav-link {
-  font-weight: 500;
-  color: #b6c2c7 !important;
-  text-align: left; }
-
-.nav-link:hover {
-  font-weight: 500;
-  color: #fff !important;
-  transition: ease 0.5s  all; }
-
-/* 'Imprima', sans-serif; */
 footer {
   background-color: #0a3344;
   color: #fff; }
@@ -180,6 +213,12 @@ footer {
   font-size: 1rem;
   text-align: right; }
 
+@media (max-width: 768px) {
+  .footer-contact {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 135px; } }
 .footer-text {
   font-size: 0.9rem; }
 
@@ -211,58 +250,6 @@ footer {
   margin-left: 25px;
   margin-bottom: 5px; }
 
-.banner-index {
-  background-color: #323232; }
-
-.banner-it {
-  height: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0rem;
-  display: absolute;
-  z-index: 30; }
-
-.banner-ib {
-  height: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4rem;
-  display: absolute;
-  z-index: 20; }
-
-.banner-team {
-  color: #fff;
-  padding-top: 3.4rem;
-  background-color: #323232; }
-
-.banner-gallery {
-  color: #fff;
-  padding-top: 3.4rem;
-  background-color: #323232; }
-
-.banner-t {
-  height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0rem;
-  display: absolute; }
-
-.banner-modelo {
-  color: #fff;
-  padding-top: 6rem;
-  background-color: #323232;
-  padding-bottom: 0; }
-
-.banner-testimonio {
-  color: #fff;
-  padding-top: 6rem;
-  background-color: #323232;
-  padding-bottom: 0; }
-
-.banner-llegar {
-  color: #fff;
-  padding-top: 6rem;
-  background-color: #323232;
-  padding-bottom: 0; }
+/* 'Imprima', sans-serif; */
 
 /*# sourceMappingURL=main.css.map */

@@ -136,4 +136,88 @@ class Employed
     {
         return $this->id;
     }
+    /**
+     * @var string
+     */
+    private $firstName;
+
+    /**
+     * @var integer
+     */
+    private $experience;
+
+    /**
+     * @var string
+     */
+    private $urlImage;
+
+
+    /**
+     * Set firstName
+     *
+     * @param string $firstName
+     * @return Employed
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+
+        return $this;
+    }
+
+    /**
+     * Get firstName
+     *
+     * @return string 
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * Set experience
+     *
+     * @param integer $experience
+     * @return Employed
+     */
+    public function setExperience($experience)
+    {
+        $this->experience = $experience;
+
+        return $this;
+    }
+
+    /**
+     * Get experience
+     *
+     * @return integer 
+     */
+    public function getExperience()
+    {
+        return $this->experience;
+    }
+
+    /**
+     * Set urlImage
+     *
+     * @param string $urlImage
+     * @return Employed
+     */
+    public function setUrlImage($urlImage)
+    {
+        $this->urlImage = $urlImage;
+
+        return $this;
+    }
+
+    /**
+     * Get urlImage
+     *
+     * @return string 
+     */
+    public function getUrlImage()
+    {
+        return $this->urlImage;
+    }
 }

@@ -4,9 +4,9 @@
 {% block banner %}
 {{ include('banner.html.twig') }}
 {% block bcontent %}
-<div class="banner-team">
+<div class="banner team">
     <div class="container text-center">
-        <img class="banner-t img-fluid" src="{{ ('images/banner/team/team.png') }}" />
+        <img src="{{ ('images/banner/team/team.png') }}" />
     </div>
 </div>
 {% endblock %}
@@ -17,89 +17,21 @@
 <section>
  <div class="container">
     <div class="card-columns">
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/eLoyola.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Eduardo Loyola</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
+        {% for empleados in empleado %}
+            <div class="card">
+                <img class="card-img-top" src="{{ ('images/team/'~empleados.urlImage) }}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{empleados.firstName}} {{empleados.lastName}}</h4>
+                    <h5 class="card-subtitle">{{empleados.position}}</h5>
+                    <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+                    <div class="card-icon-text">Función:</div> 
+                    <div class="card-text">{{empleados.function}}</div>
+                    <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
+                    <div class="card-icon-text">Experiencia:</div> 
+                    <div class="card-text">{{empleados.experience}} años</div> 
+                </div>
             </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/2.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">2</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
-            </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/3.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Carlos Bolaños</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
-            </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/wRochac.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Wendy de Rochac</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
-            </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/cBolanos.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Carlos Bolaños</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
-            </div>
-        </div>
-        
-        <div class="card">
-            <img class="card-img-top" src="{{ ('images/team/jUrias.jpg') }}" alt="">
-            <div class="card-body">
-                <h4 class="card-title">Juan Urias</h4>
-                <h5 class="card-subtitle">Director CTA El Salvador</h5>
-                <div class="card-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                <div class="card-icon-text">Función:</div> 
-                <div class="card-text">Terapeuta</div> 
-                <div class="card-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> 
-                <div class="card-icon-text">Experiencia:</div> 
-                <div class="card-text">10 años</div> 
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 </section>

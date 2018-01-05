@@ -4,9 +4,11 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="name" type="string" column="name" length="45" nullable="false"/>
+    <field name="firstName" type="string" column="first_name" length="45" nullable="false"/>
     <field name="lastName" type="string" column="last_name" length="45" nullable="false"/>
-    <field name="position" type="string" column="position" length="45" nullable="false"/>
-    <field name="function" type="string" column="function" length="45" nullable="false"/>
+    <field name="position" type="string" column="position" length="100" nullable="true"/>
+    <field name="function" type="string" column="function" length="100" nullable="true"/>
+    <field name="experience" type="integer" column="experience" nullable="true"/>
+    <field name="urlImage" type="string" column="url_image" length="45" nullable="false"/>
   </entity>
 </doctrine-mapping>

@@ -1,62 +1,41 @@
-.banner-index{
+.banner{
     background-color: #323232;
+    height: 290px;
+    position:relative;
 }
 
 .banner-it{
-    height: 4rem;
+    height: 64px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0rem;
     display: absolute;
-    z-index: 30;
 }
 
 .banner-ib{
-    height: 10rem;
+    height: 170px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
     display: absolute;
-    z-index: 20;
 }
 
-.banner-team{
-    color: #fff;
-    padding-top: 3.4rem;
-    background-color: #323232;
+.banner.modelo{
+    padding-top: 165px;
 }
 
-.banner-gallery{
-    color: #fff;
-    padding-top: 3.4rem;
-    background-color: #323232;
+.banner.team{
+    padding-top: 64px;
 }
 
-.banner-t{
-    height: 15rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
-    display: absolute;
+.banner.testimonio{
+    padding-top: 70px;
 }
 
-.banner-modelo{
-    color: #fff;
-    padding-top: 6rem;
-    background-color: #323232;
-    padding-bottom: 0;
+.banner.gallery{
+    padding-top: 60px;
 }
 
-.banner-testimonio{
-    color: #fff;
-    padding-top: 6rem;
-    background-color: #323232;
-    padding-bottom: 0;
-}
-
-.banner-llegar{
-    color: #fff;
-    padding-top: 6rem;
-    background-color: #323232;
-    padding-bottom: 0;
+.banner.llegar{
+    padding-top: 50px;
 }

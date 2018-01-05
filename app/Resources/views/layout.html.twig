@@ -4,18 +4,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="ThemeWagon" />
-<meta name="Description" content="Responsive Multiporpuse HTML5 Website Template">
-<meta name="keywords" content="El Salvador, Centro Terapeutico de Adicciones, Eduado Loyola, vkings.net">
-<title>{% block title %}CTA El Salvador |{% endblock %}</title>
+<meta name="author" content="Víctor M. Reyes | vreyes@vkings.net" />
+<meta name="theme-color" content="#0A3344">
+<meta name="image" content="{{ asset('images/ctaelsalvador-logo.png') }}" />
+<meta name="Description" content="Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares.">
+<meta name="keywords" content="El Salvador, Centro Terapeutico de Adicciones, Eduado Loyola, Víctor M. Reyes">
+<title>{% block title %}{% endblock %}</title>
 {% block stylesheets %}
 <link rel="shortcut icon" href="{{ asset('images/_favicon.ico') }}" />    
 <script href="{{ asset('resources/ctaelsalvador/assets/js/jquery-3.2.1.slim.min.js') }}" type="text/javascript"></script>
-<script href="{{ asset('resources/ctaelsalvador/assets/js/popper.min.js') }}" type="text/javascript"></script>
-<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/plugins/bootstrap/js/bootstrap.min.js') }}" type="text/javascript">
 <link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/plugins/bootstrap/css/bootstrap.min.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/main.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/font-awesome.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/main.css?nocache')}}='{{ random(999) }}'" type="text/css">
 </head>
 {% endblock %}
 <body>
@@ -24,4 +23,8 @@
 {{ include('footer.html.twig') }}
 {% endblock %}
 </body>
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+<script href="{{ asset('resources/ctaelsalvador/assets/js/popper.min.js') }}" type="text/javascript"></script>
+<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/plugins/bootstrap/js/bootstrap.min.js') }}" type="text/javascript">
+<link rel="stylesheet" href="{{ asset('resources/ctaelsalvador/assets/css/font-awesome.min.css') }}" type="text/css">
+{% endblock %}
