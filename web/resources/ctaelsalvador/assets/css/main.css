@@ -185,6 +185,9 @@ section {
   font-family: "Imprima", sans-serif;
   display: inline; }
 
+.img-gallery {
+  margin-bottom: 1.5rem; }
+
 footer {
   background-color: #0a3344;
   color: #fff; }
