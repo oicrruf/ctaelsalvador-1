@@ -13,29 +13,75 @@
 }
 
 .banner-ib{
-    height: 170px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
-    display: absolute;
+    margin-top: 65px;
 }
 
-.banner.modelo{
-    padding-top: 165px;
+.llegar{
+    padding-top: 50px;
 }
 
-.banner.team{
-    padding-top: 64px;
+.modelo{
+    padding-top: 138px;
 }
 
-.banner.testimonio{
+.team{
+    padding-top: 50px;
+}
+
+.testimonio{
     padding-top: 70px;
 }
 
-.banner.gallery{
-    padding-top: 60px;
+.gallery{
+    padding-top: 40px;
 }
 
-.banner.llegar{
-    padding-top: 50px;
+@media (max-width: 991px) {
+    .banner{
+        background-color: #323232;
+        height: 210px;
+        position:relative;
+    }
+
+.banner-it{
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0rem;
+        display: absolute;
+    }
+    
+    .banner-ib{
+        margin-top: 65px;
+        width: 290px;
+        height: 104px;
+        
+    }
+    
+    .llegar{
+        padding-top: 70px;
+        width: 290px;
+    }
+    
+    .modelo{
+        padding-top: 135px;
+        width: 290px;
+    }
+    
+    .team{
+        padding-top: 100px;
+        width: 290px;
+    }
+    
+    .testimonio{
+        padding-top: 80px;
+        width: 290px;
+    }
+    
+    .gallery{
+        padding-top: 65px;
+        width: 290px;
+    }
 }

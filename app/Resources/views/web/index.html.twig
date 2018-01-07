@@ -7,10 +7,10 @@
 <div class="banner">
     <div class="container">
         <div class="row">
-            <img class="banner-it img-fluid" src="{{ ('images/banner/index/hand-top.png') }}" />
+            <img class="banner-it" src="{{ ('images/banner/index/hand-top.png') }}" />
         </div>
         <div class="row">
-            <img class="banner-ib img-fluid" src="{{ ('images/banner/index/hands-bottom.png') }}" />
+            <img class="banner-ib" src="{{ ('images/banner/index/hands-bottom.png') }}" />
         </div>
     </div>
 </div>
@@ -109,8 +109,10 @@
                 <div class="row">
                     {% for logo in logoInstitution if logo.type=='Cliente' %}
                         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
-                            <div class="logo-title">{{ logo.name }}</div>
+                            <a href="http://{{ logo.urlWebsite}}" target="_blank">
+                                <img class="img-fluid img-thumbnail" src="{{ asset('images/institutions/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                                <div class="logo-title">{{ logo.name }}</div>
+                            </a>
                         </div>
                     {% endfor %}
                 </div>
@@ -126,8 +128,10 @@
                 <div class="row">
                     {% for logo in logoInstitution if logo.type=='Certificacion' %}
                         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
-                            <div class="logo-title">{{ logo.name }}</div>
+                            <a href="http://{{ logo.urlWebsite}}" target="_blank">
+                                <img class="img-fluid img-thumbnail" src="{{ asset('images/institutions/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                                <div class="logo-title">{{ logo.name }}</div>
+                            </a>
                         </div>
                     {% endfor %}
                 </div>
@@ -143,8 +147,10 @@
                 <div class="row">
                     {% for logo in logoInstitution if logo.type=='Reconocimiento' %}
                         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                            <img class="img-fluid img-thumbnail" src="{{ asset('images/clients/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
-                            <div class="logo-title">{{ logo.name }}</div>
+                            <a href="http://{{ logo.urlWebsite}}" target="_blank">
+                                <img class="img-fluid img-thumbnail" src="{{ asset('images/institutions/'~logo.urlImage) }}" alt="{{ logo.altImage }}"/>
+                                <div class="logo-title">{{ logo.name }}</div>
+                            </a>
                         </div>
                     {% endfor %}
                 </div>

@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500');
+@import url('https://fonts.googleapis.com/css?family=Imprima');
+
 @import "_variables";
 
 ::-moz-selection {
-    background: #1e97cc;
+    background: #0a3344;
     color: #ffffff;
 }
 
 ::selection {
-    background: #1e97cc;
+    background: #0a3344;
     color: #ffffff;
 }
 
@@ -107,9 +110,10 @@ section{
 
 .icon-valores{
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     float: left;
     margin-right: 0.5rem;
+    color: #000;
 }
 
 .section-header{
@@ -147,6 +151,8 @@ section{
 
 .logo-title{
     margin: 5px 0px 10px 0px;
+    text-decoration: none;
+    color: #666666;
 }
 
 .testimonial-content{
@@ -167,4 +173,17 @@ section{
 
 .img-gallery{
     margin-bottom: 1.5rem;
+}
+
+/* Scroll en navBar */
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }

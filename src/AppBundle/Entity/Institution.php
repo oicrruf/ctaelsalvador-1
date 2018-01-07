@@ -136,4 +136,32 @@ class Institution
     {
         return $this->id;
     }
+    /**
+     * @var string
+     */
+    private $urlWebsite;
+
+
+    /**
+     * Set urlWebsite
+     *
+     * @param string $urlWebsite
+     * @return Institution
+     */
+    public function setUrlWebsite($urlWebsite)
+    {
+        $this->urlWebsite = $urlWebsite;
+
+        return $this;
+    }
+
+    /**
+     * Get urlWebsite
+     *
+     * @return string 
+     */
+    public function getUrlWebsite()
+    {
+        return $this->urlWebsite;
+    }
 }

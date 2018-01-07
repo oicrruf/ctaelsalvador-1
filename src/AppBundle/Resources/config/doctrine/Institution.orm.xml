@@ -12,5 +12,6 @@
     <field name="urlImage" type="string" column="url_image" length="255" nullable="false"/>
     <field name="altImage" type="string" column="alt_image" length="45" nullable="true"/>
     <field name="type" type="string" column="type" length="45" nullable="true"/>
+    <field name="urlWebsite" type="string" column="url_website" length="100" nullable="true"/>
   </entity>
 </doctrine-mapping>

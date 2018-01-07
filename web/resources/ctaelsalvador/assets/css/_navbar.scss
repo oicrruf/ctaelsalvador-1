@@ -1,11 +1,13 @@
 .logo-nav{
     height: 40px;
+    display: inline;
 }
 
 .nav-link{
+    line-height: 60px;
     font-weight: 500;
     color: #b6c2c7 !important;
-    text-align: left;
+    display: inline;
 }
 
 .nav-link:hover{

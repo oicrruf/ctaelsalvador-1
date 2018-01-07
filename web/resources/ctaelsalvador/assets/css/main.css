@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
 @import url("https://fonts.googleapis.com/css?family=Imprima");
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
-@import url("https://fonts.googleapis.com/css?family=Imprima");
 .banner {
   background-color: #323232;
   height: 290px;
@@ -15,47 +13,83 @@
   display: absolute; }
 
 .banner-ib {
-  height: 170px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
-  display: absolute; }
+  margin-top: 65px; }
 
-.banner.modelo {
-  padding-top: 165px; }
-
-.banner.team {
-  padding-top: 64px; }
-
-.banner.testimonio {
-  padding-top: 70px; }
-
-.banner.gallery {
-  padding-top: 60px; }
-
-.banner.llegar {
+.llegar {
   padding-top: 50px; }
 
+.modelo {
+  padding-top: 138px; }
+
+.team {
+  padding-top: 50px; }
+
+.testimonio {
+  padding-top: 70px; }
+
+.gallery {
+  padding-top: 40px; }
+
+@media (max-width: 991px) {
+  .banner {
+    background-color: #323232;
+    height: 210px;
+    position: relative; }
+
+  .banner-it {
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    display: absolute; }
+
+  .banner-ib {
+    margin-top: 65px;
+    width: 290px;
+    height: 104px; }
+
+  .llegar {
+    padding-top: 70px;
+    width: 290px; }
+
+  .modelo {
+    padding-top: 135px;
+    width: 290px; }
+
+  .team {
+    padding-top: 100px;
+    width: 290px; }
+
+  .testimonio {
+    padding-top: 80px;
+    width: 290px; }
+
+  .gallery {
+    padding-top: 65px;
+    width: 290px; } }
 .logo-nav {
-  height: 40px; }
+  height: 40px;
+  display: inline; }
 
 .nav-link {
+  line-height: 60px;
   font-weight: 500;
   color: #b6c2c7 !important;
-  text-align: left; }
+  display: inline; }
 
 .nav-link:hover {
   font-weight: 500;
   color: #fff !important;
   transition: ease 0.5s  all; }
 
-/* 'Imprima', sans-serif; */
 ::-moz-selection {
-  background: #1e97cc;
+  background: #0a3344;
   color: #ffffff; }
 
 ::selection {
-  background: #1e97cc;
+  background: #0a3344;
   color: #ffffff; }
 
 body {
@@ -139,9 +173,10 @@ section {
 
 .icon-valores {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   float: left;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  color: #000; }
 
 .section-header {
   padding-top: 70px;
@@ -170,7 +205,9 @@ section {
     background-color: #0A3344;
     line-height: 1.8rem; } }
 .logo-title {
-  margin: 5px 0px 10px 0px; }
+  margin: 5px 0px 10px 0px;
+  text-decoration: none;
+  color: #666666; }
 
 .testimonial-content {
   margin-top: 2rem; }
@@ -188,6 +225,17 @@ section {
 .img-gallery {
   margin-bottom: 1.5rem; }
 
+/* Scroll en navBar */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap; }
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
 footer {
   background-color: #0a3344;
   color: #fff; }
@@ -204,6 +252,7 @@ footer {
   float: left; }
 
 .footer-text {
+  font-size: 0.9rem;
   padding-left: 120px; }
 
 .footer-ml-icon {
@@ -213,17 +262,8 @@ footer {
 
 .footer-contact {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: right; }
-
-@media (max-width: 768px) {
-  .footer-contact {
-    display: inline-block;
-    font-size: 0.9rem;
-    text-align: left;
-    padding-left: 135px; } }
-.footer-text {
-  font-size: 0.9rem; }
 
 .footer-contact-title {
   display: block;
@@ -231,28 +271,39 @@ footer {
   font-size: 1.2em;
   line-height: 2rem; }
 
+@media (max-width: 768px) {
+  .footer-contact {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 15px; }
+
+  .footer-text {
+    font-size: 0.9rem;
+    padding-left: 0px; } }
 .card-title {
   padding-bottom: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-left: 10px; }
 
 .card-subtitle {
   color: #6f6f6f;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 10px; }
 
 .card-icon {
   float: left;
+  margin-left: 10px;
   color: #000; }
 
 .card-icon-text {
   color: #000;
   display: block;
-  margin-left: 25px; }
+  margin-left: 35px; }
 
 .card-text {
   display: block;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-bottom: 5px; }
-
-/* 'Imprima', sans-serif; */
 
 /*# sourceMappingURL=main.css.map */
