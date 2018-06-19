@@ -2,28 +2,11 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Gallery
  */
 class Gallery
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
     /**
      * @var string
      */
@@ -42,13 +25,19 @@ class Gallery
     /**
      * @var string
      */
-    private $altImg;
+    private $altImage;
+
+    /**
+     * @var integer
+     */
+    private $id;
 
 
     /**
      * Set type
      *
      * @param string $type
+     *
      * @return Gallery
      */
     public function setType($type)
@@ -61,7 +50,7 @@ class Gallery
     /**
      * Get type
      *
-     * @return string 
+     * @return string
      */
     public function getType()
     {
@@ -72,6 +61,7 @@ class Gallery
      * Set nameActivity
      *
      * @param string $nameActivity
+     *
      * @return Gallery
      */
     public function setNameActivity($nameActivity)
@@ -84,7 +74,7 @@ class Gallery
     /**
      * Get nameActivity
      *
-     * @return string 
+     * @return string
      */
     public function getNameActivity()
     {
@@ -95,6 +85,7 @@ class Gallery
      * Set urlImage
      *
      * @param string $urlImage
+     *
      * @return Gallery
      */
     public function setUrlImage($urlImage)
@@ -107,7 +98,7 @@ class Gallery
     /**
      * Get urlImage
      *
-     * @return string 
+     * @return string
      */
     public function getUrlImage()
     {
@@ -115,37 +106,10 @@ class Gallery
     }
 
     /**
-     * Set altImg
-     *
-     * @param string $altImg
-     * @return Gallery
-     */
-    public function setAltImg($altImg)
-    {
-        $this->altImg = $altImg;
-
-        return $this;
-    }
-
-    /**
-     * Get altImg
-     *
-     * @return string 
-     */
-    public function getAltImg()
-    {
-        return $this->altImg;
-    }
-    /**
-     * @var string
-     */
-    private $altImage;
-
-
-    /**
      * Set altImage
      *
      * @param string $altImage
+     *
      * @return Gallery
      */
     public function setAltImage($altImage)
@@ -158,10 +122,21 @@ class Gallery
     /**
      * Get altImage
      *
-     * @return string 
+     * @return string
      */
     public function getAltImage()
     {
         return $this->altImage;
     }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }
+

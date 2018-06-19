@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Institution
  */
@@ -30,6 +28,11 @@ class Institution
     private $type;
 
     /**
+     * @var string
+     */
+    private $urlWebsite;
+
+    /**
      * @var integer
      */
     private $id;
@@ -39,6 +42,7 @@ class Institution
      * Set name
      *
      * @param string $name
+     *
      * @return Institution
      */
     public function setName($name)
@@ -51,7 +55,7 @@ class Institution
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -62,6 +66,7 @@ class Institution
      * Set urlImage
      *
      * @param string $urlImage
+     *
      * @return Institution
      */
     public function setUrlImage($urlImage)
@@ -74,7 +79,7 @@ class Institution
     /**
      * Get urlImage
      *
-     * @return string 
+     * @return string
      */
     public function getUrlImage()
     {
@@ -85,6 +90,7 @@ class Institution
      * Set altImage
      *
      * @param string $altImage
+     *
      * @return Institution
      */
     public function setAltImage($altImage)
@@ -97,7 +103,7 @@ class Institution
     /**
      * Get altImage
      *
-     * @return string 
+     * @return string
      */
     public function getAltImage()
     {
@@ -108,6 +114,7 @@ class Institution
      * Set type
      *
      * @param string $type
+     *
      * @return Institution
      */
     public function setType($type)
@@ -120,7 +127,7 @@ class Institution
     /**
      * Get type
      *
-     * @return string 
+     * @return string
      */
     public function getType()
     {
@@ -128,24 +135,10 @@ class Institution
     }
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-    /**
-     * @var string
-     */
-    private $urlWebsite;
-
-
-    /**
      * Set urlWebsite
      *
      * @param string $urlWebsite
+     *
      * @return Institution
      */
     public function setUrlWebsite($urlWebsite)
@@ -158,10 +151,21 @@ class Institution
     /**
      * Get urlWebsite
      *
-     * @return string 
+     * @return string
      */
     public function getUrlWebsite()
     {
         return $this->urlWebsite;
     }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }
+

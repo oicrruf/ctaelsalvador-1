@@ -4,8 +4,20 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="type" type="string" column="type" length="100" nullable="true"/>
-    <field name="name" type="string" column="name" length="100" nullable="true"/>
-    <field name="testimonial" type="text" column="testimonial" nullable="false"/>
+    <field name="type" type="string" column="type" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="name" type="string" column="name" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="testimonial" type="text" column="testimonial" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
   </entity>
 </doctrine-mapping>

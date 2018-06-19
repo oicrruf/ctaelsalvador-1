@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Testimonial
  */
@@ -34,6 +32,7 @@ class Testimonial
      * Set type
      *
      * @param string $type
+     *
      * @return Testimonial
      */
     public function setType($type)
@@ -46,7 +45,7 @@ class Testimonial
     /**
      * Get type
      *
-     * @return string 
+     * @return string
      */
     public function getType()
     {
@@ -57,6 +56,7 @@ class Testimonial
      * Set name
      *
      * @param string $name
+     *
      * @return Testimonial
      */
     public function setName($name)
@@ -69,7 +69,7 @@ class Testimonial
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -80,6 +80,7 @@ class Testimonial
      * Set testimonial
      *
      * @param string $testimonial
+     *
      * @return Testimonial
      */
     public function setTestimonial($testimonial)
@@ -92,7 +93,7 @@ class Testimonial
     /**
      * Get testimonial
      *
-     * @return string 
+     * @return string
      */
     public function getTestimonial()
     {
@@ -102,10 +103,11 @@ class Testimonial
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
     }
 }
+
