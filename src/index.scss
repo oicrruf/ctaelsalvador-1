@@ -5,3 +5,8 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+.logo.text-center.text-sm-left.mb_sm--20 a img, 
+.logo a img{
+    height: 66px !important;
+}
