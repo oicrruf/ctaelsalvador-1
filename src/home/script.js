@@ -1,4 +1,3 @@
-
 export const portfolioSlick = {
     dots: true,
     infinite: true,

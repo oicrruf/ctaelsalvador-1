@@ -7,7 +7,7 @@ import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 import Slider from "react-slick";
 import PortfolioList from "../elements/portfolio/PortfolioList";
-import { slickDot , portfolioSlick2 } from "../page-demo/script";
+import { slickDot , portfolioSlick2 } from "../home/script";
 
 const list = [
     {
