@@ -1,77 +1,68 @@
-Symfony Standard Edition
-========================
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
-that fits you best.
+## Available Scripts
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+In the project directory, you can run:
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+### `npm start`
 
-What's inside?
---------------
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The Symfony Standard Edition is configured with the following defaults:
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-  * An AppBundle you can use to start coding;
+### `npm test`
 
-  * Twig as the only configured template engine;
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  * Doctrine ORM/DBAL;
+### `npm run build`
 
-  * Swiftmailer;
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-  * Annotations enabled for everything.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-It comes pre-configured with the following bundles:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+### `npm run eject`
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+## Learn More
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
+### Code Splitting
 
-  * [**SensioGeneratorBundle**][13] (in dev env) - Adds code generation
-    capabilities
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-  * [**WebServerBundle**][14] (in dev env) - Adds commands for running applications
-    using the PHP built-in web server
+### Analyzing the Bundle Size
 
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+### Making a Progressive Web App
 
-Enjoy!
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-[1]:  https://symfony.com/doc/3.4/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.4/doctrine.html
-[8]:  https://symfony.com/doc/3.4/templating.html
-[9]:  https://symfony.com/doc/3.4/security.html
-[10]: https://symfony.com/doc/3.4/email.html
-[11]: https://symfony.com/doc/3.4/logging.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
-[14]: https://symfony.com/doc/current/setup/built_in_web_server.html
-[15]: https://symfony.com/doc/current/setup.html
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
