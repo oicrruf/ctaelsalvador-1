@@ -100,6 +100,46 @@ class Business extends Component{
                     </div>
                 </div>
                 {/* End Slider Area   */}
+
+                {/* Start About Area  */}
+                <div className="rn-about-area ptb--120 bg_color--1">
+                    <div className="container">
+                        <div className="row row--35 align-items-center">
+                            <div className="col-lg-6 order-2 order-lg-1">
+                                <div className="about-inner inner">
+                                    <div className="section-title">
+                                        <h2 className="title">About</h2>
+                                        <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.</p>
+                                    </div>
+                                    <div className="mt--30">
+                                        <h4>Lorem ipsum dolor sit.</h4>
+                                        <ul className="list-style--1">
+                                            {namesItemOne.map((name, index) => {
+                                                return <li key={ index }><FiCheck /> {name}</li>;
+                                            })}
+                                        </ul>
+                                    </div>
+                                    <div className="mt--30">
+                                        <h4>Lorem ipsum dolor sit.</h4>
+                                        <ul className="list-style--1">
+                                            {namesItemTwo.map((name, index) => {
+                                                return <li key={ index }><FiCheck /> {name}</li>;
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 order-1 order-lg-2">
+                                <div className="thumbnail position-relative">
+                                    <img className="w-100" src="/assets/images/about/about-3.png" alt="About Images"/>
+                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
+                                    <button className="video-popup position-top-center theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End About Area  */}
                 
                 {/* Start Brand Area */}
                 <div className="rn-brand-area bg_color--5 ptb--60">
@@ -161,45 +201,23 @@ class Business extends Component{
                 </div>
                 {/* End About Area  */}
 
-                {/* Start About Area  */}
-                <div className="rn-about-area ptb--120 bg_color--1">
+                {/* Start Team Area  */}
+                <div className="rn-team-area ptb--120 bg_color--1">
                     <div className="container">
-                        <div className="row row--35 align-items-center">
-                            <div className="col-lg-6 order-2 order-lg-1">
-                                <div className="about-inner inner">
-                                    <div className="section-title">
-                                        <h2 className="title">About</h2>
-                                        <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.</p>
-                                    </div>
-                                    <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemOne.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
-                                    </div>
-                                    <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemTwo.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 order-1 order-lg-2">
-                                <div className="thumbnail position-relative">
-                                    <img className="w-100" src="/assets/images/about/about-3.png" alt="About Images"/>
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
-                                    <button className="video-popup position-top-center theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
+                                    <h2 className="title">Nuestro Staff</h2>
+                                    <p>El equipo del CTA está conformado por profesionales especializados que cuentan con experiencia en el diagnóstico y el tratamiento de adicciones certificadas que requieren este tipo de programas.</p>
                                 </div>
                             </div>
                         </div>
+                        <div className="row">
+                            <Team column="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" teamStyle="" item="6" />
+                        </div>
                     </div>
                 </div>
-                {/* End About Area  */}
+                {/* End Team Area  */}
 
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area ptb--120 bg_color--5">
@@ -228,27 +246,8 @@ class Business extends Component{
                 </div>
                 {/* End Portfolio Area */}
 
-                {/* Start Team Area  */}
-                <div className="rn-team-area ptb--120 bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
-                                    <h2 className="title">Skilled Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <Team column="col-lg-4 col-md-6 col-sm-6 col-12" />
-                        </div>
-                    </div>
-                </div>
-                {/* End Team Area  */}
-
-
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 pb--80 bg_color--5">
+                <div className="rn-blog-area pt--120 pb--80 bg_color--1">
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-12">

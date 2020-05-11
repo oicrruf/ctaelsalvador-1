@@ -3,110 +3,34 @@ import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
 
 let TeamContent = [
     {
-        images: '01',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/eLoyola.jpg',
+        title: 'Eduardo Loyola',
+        designation: 'Director CTA El Salvador',
     },
     {
-        images: '02',
-        title: 'Fatima Asrafi',
-        designation: 'Front-end Engineer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/jUrias.jpg',
+        title: 'Juan Carlos Urias',
+        designation: 'Psicólogo Clínico',
     },
     {
-        images: '03',
-        title: 'Al-Amin Bali',
-        designation: 'Sr. Graphic Designer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/wRochac.jpg',
+        title: 'Wendy Araujo Rochac',
+        designation: 'Médico Psiquiatra',
     },
     {
-        images: '06',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/mSatta.jpg',
+        title: 'Michele Satta',
+        designation: 'Consejero',
     },
     {
-        images: '05',
-        title: 'Fatima Asrafi',
-        designation: 'Front-end Engineer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/cBolanos.jpg',
+        title: 'Carlos Bolaños',
+        designation: 'Consejero',
     },
     {
-        images: '12',
-        title: 'Al-Amin Bali',
-        designation: 'Sr. Graphic Designer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        images: 'https://www.ctaelsalvador.com/images/team/lGonzalez.jpg',
+        title: 'Leticia González',
+        designation: 'Consejera',
     }
 ];
 
@@ -120,17 +44,12 @@ class Team extends Component{
                     <div className={`${column}`} key={i}>
                         <div className="team">
                             <div className="thumbnail">
-                                <img src={`/assets/images/team/team-${value.images}.jpg`} alt="Blog Images"/>
+                                <img src={value.images} alt="Blog Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">{value.title}</h4>
                                 <p className="designation">{value.designation}</p>
                             </div>
-                            <ul className="social-icon" >
-                                {value.socialNetwork.map((social, index) =>
-                                    <li key={index}><a href={`${social.url}`}>{social.icon}</a></li>
-                                )}
-                            </ul>
                         </div>
                     </div>
                 ))}
