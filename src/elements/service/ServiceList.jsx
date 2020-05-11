@@ -1,39 +1,29 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { AiOutlineHeart, AiOutlineMessage } from "react-icons/ai";
+import { FaRegHandPaper, FaRegLifeRing } from "react-icons/fa";
 
 const ServiceList = [
     {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <AiOutlineHeart />,
+        title: 'Amor',
+        description: 'Lo buscamos, lo encontramos y luchamos por construirlo cada día.'
     },
     {
-        icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <AiOutlineMessage />,
+        title: 'Confidencialidad',
+        description: 'Garantizamos el resguardo de la información documental y personal del paciente o usuario y el de su núcleo familiar.'
     },
     {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaRegLifeRing />,
+        title: 'Opción por la Vida',
+        description: 'Es una invitación a transformar las tendencias destructivas de la subcultura de drogodependencia en un encuentro constructivo y creativo consigo mismo y con el otro.'
     },
     { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaRegHandPaper />,
+        title: 'Respeto',
+        description: 'Cada persona es un ser diferente y tiene necesidades distintas. El respeto se refleja en el reconocimiento de las diferencias y atención de necesidades y derechos.'
     }
 ]
-
 
 class ServiceThree extends Component{
     render(){
@@ -47,12 +37,14 @@ class ServiceThree extends Component{
                         <div className={`${column}`} key={i}>
                             <a href="/service-details">
                                 <div className="service service__style--2">
-                                    <div className="icon">
-                                        {val.icon}
-                                    </div>
-                                    <div className="content">
-                                        <h3 className="title">{val.title}</h3>
-                                        <p>{val.description}</p>
+                                    <div className="row">
+                                        <div className="icon col-sm-2">
+                                            {val.icon}
+                                        </div>
+                                        <div className="content col-sm-10">
+                                            <h3 className="title">{val.title}</h3>
+                                            <p>{val.description}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </a>

@@ -108,24 +108,27 @@ class Business extends Component{
                             <div className="col-lg-6 order-2 order-lg-1">
                                 <div className="about-inner inner">
                                     <div className="section-title">
-                                        <h2 className="title">About</h2>
-                                        <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.</p>
+                                        <h2 className="title">¿Quiénes somos?</h2>
+                                        <div className="description">
+                                            <p>
+                                                Somos una institución especializada en brindar una salida a las personas que tienen problemas con el abuso de sustancias y dar apoyo a sus familiares. En el Centro Terapéutico de Adicciones (CTA) desarrollamos programas ambulatorios simultáneos (paciente-familia) donde se brindan las herramientas necesarias para lograr que los pacientes retomen una vida equilibrada, racional y consciente, superando sus adicciones o codependencias.
+                                            </p>
+                                            {/* <p>
+                                                El centro está hecho para que a él acudan los pacientes, pero también sus familiares, nuestros expertos ayudan a canalizar sus emociones a través de programas acorde a las necesidades de cada uno. La finalidad de estos programas es reconstruir sus vidas, respetando la confianza entre los involucrados y trabajando con total confidencialidad, excelencia y calidad en la atención integral e individual para las personas.
+                                            </p> */}
+                                        </div>
                                     </div>
                                     <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemOne.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
+                                        <h4>Misión</h4>
+                                        <p className="cta-about-us">
+                                            Acompañar a las personas afectadas por la adicción, codependencia y afines para que sean personas integrales y encuentren su sentido de vida.
+                                        </p>
                                     </div>
                                     <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemTwo.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
+                                        <h4>Visión</h4>
+                                        <p className="cta-about-us">
+                                            Ser reconocidos a nivel nacional e internacional como institución especializada, modelo referente y de alto rendimiento, con la calidad humana y profesional de brindar una respuesta cálida y afectuosa a nuestros usuarios.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -159,14 +162,13 @@ class Business extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--30 mb_sm--0">
-                                    <h2 className="title">Our Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">Valores Institucionales</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="row creative-service">
                             <div className="col-lg-12">
-                                <ServiceList item="6" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
+                                <ServiceList item="4" column="col-lg-6 col-md-6 col-sm-6 col-12 text-left" />
                             </div>
                         </div>
                     </div>
@@ -185,8 +187,8 @@ class Business extends Component{
                             <div className="col-lg-6">
                                 <div className="about-inner inner">
                                     <div className="section-title">
-                                        <h2 className="title">Working Process</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim exercitationem impedit iure quia quo recusandae?</p>
+                                        <h2 className="title">¿Por qué nosotros?</h2>
+                                        <p>¡Tenemos muchas razones para ser tu mejor opción!</p>
                                     </div>
                                     <div className="accordion-wrapper mt--30">
                                         <Accordion01 />
@@ -207,7 +209,7 @@ class Business extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
-                                    <h2 className="title">Nuestro Staff</h2>
+                                <h2 className="title">Nuestro Staff</h2>
                                     <p>El equipo del CTA está conformado por profesionales especializados que cuentan con experiencia en el diagnóstico y el tratamiento de adicciones certificadas que requieren este tipo de programas.</p>
                                 </div>
                             </div>

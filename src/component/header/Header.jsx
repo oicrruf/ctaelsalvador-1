@@ -53,6 +53,7 @@ class Header extends Component {
                                 <li><Link to="/" >Modelo</Link></li>
                                 <li><Link to="/" >Testimonios</Link></li>
                                 <li><Link to="/" >Galería</Link></li>
+                                <li><Link to="/about" >Nosotros</Link></li>
                                 <li><Link to="/contact" >Contactanos</Link></li>
                             </ul>
                         </nav>
