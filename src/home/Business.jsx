@@ -135,7 +135,7 @@ class Business extends Component{
                             <div className="col-lg-6 order-1 order-lg-2">
                                 <div className="thumbnail position-relative">
                                     <img className="w-100" src="/assets/images/about/about-3.png" alt="About Images"/>
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
+                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='SHFAYIuXKao' onClose={() => this.setState({isOpen: false})} />
                                     <button className="video-popup position-top-center theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
                                 </div>
                             </div>
