@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Desktop Nav -->
+    <header class="sticky bg-white top-0 z-50 drop-shadow-md md:drop-shadow-mdr">
+        <nav class=" flex flex-wrap items-center justify-between  
+                pt-6 
+                pb-3
+                pr-4 
+                pl-4 
+                lg:pt-15
+                lg:pb-6
+                lg:pr-28
+                lg:pl-28
+                text-lg text-gray-700  max-w-full ">
+            <!-- Responsive Hamburguer menu -->
+            <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- IMAGE -->
+            <div>
+                <a href="#">
+                    <img src="assets/cta.svg" />
+                </a>
+            </div>
+            <!--  Menu -->
+            <div class="hidden w-full md:flex md:items-end md:w-auto pr-2" id="menu">
+                <ul class="
+                        text-base text-gray-800
+                        pt-4
+                        md:flex
+                        md:justify-between
+                        md:pt-0">
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-400" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-indigo-400" href="testimonios.html">Testimonios</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-indigo-400" href="modelo.html">Modelo</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-indigo-400" href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-purple-400 text-indigo-400"
+                            href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Contacto -->
+    <div class="py-20 px-12 lg:py-36 lg:px-24 flex flex-row justify-center bg-gray-100">
+        <div class="mr-0 lg:mr-36">
+            <h3 class="text-xl lg:text-3xl font-semibold text-grey-900 pb-2 lg:pb-3 text-left mb-8  items-center items-center justify-center">Contáctanos a traves de nuestras redes:</h3>
+            <div class="flex flex-row pb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill-gray-500 ">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" />
+                </svg>
+                <h1 class="text-gray-500 ml-4">contact@ctaelsalvador.com</h1>
+            </div>
+            <div class="flex flex-row pb-12 ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill-gray-500 ">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                <h1 class="text-gray-500 ml-4">/ctaelsalvador</h1>
+            </div>
+            <div class="flex flex-row pb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill-gray-500 ">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z" />
+                </svg>
+                <h1 class="text-gray-500 ml-4">Tel.: 2263-1478</h1>
+            </div>
+        </div>
+        <div>
+            <img src="assets/contact.jpg" class="hidden lg:block h-96	 rounded-md">
+        </div>
+
+    </div>
+    <!-- Como llegar -->
+    <div class="min-h-min bg-white">
+        <div class="py-8 lg:py-10 px-6 lg:px-20">
+            <h3 class="text-xl lg:text-3xl font-semibold text-grey-900 pb-8 lg:pb-7 text-left ">Encuentranos en:</h3>
+            <iframe class="min-h-screen min-w-full max-h-1	lg:max-h-full	lg:min-h-screen lg:min-w-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.200982091026!2d-89.25205898517007!3d13.706273990376888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632fc25c0c75c7%3A0x3678e44c5f660dd!2sCentro%20Terap%C3%A9utico%20de%20Adicciones%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1669768454246!5m2!1ses!2ssv"
+                allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="bg-blue-900 mt-20 pt-8 pb-12 px-5  lg:mt-20 lg:pt-8 lg:pb-8 lg:px-20">
+        <div class="flex flex-row max-w-full justify-between ">
+            <h1 class="font-normal text-white">© 2022 CTA El Salvador</h1>
+            <h1 class="font-normal text-white">Diseñado por: <span class="font-medium text-white">Víctor M. Reyes</span>
+            </h1>
+        </div>
+    </div>
+    <!-- END -->
+</body>
+<script>
+    const button = document.querySelector('#menu-button'); // Hamburger Icon
+    const menu = document.querySelector('#menu'); // Menu
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+</html>
